@@ -9,7 +9,10 @@
     <symbol id="cursor-hero" viewBox="0 0 32 32">
       <path stroke-width="1.333" d="m12.031 9.341 7.289 6.803c1.247 1.164.558 3.255-1.138 3.449l-2.745.314a3.331 3.331 0 0 0-1.851.834l-1.582 1.424c-1.287 1.158-3.338.245-3.338-1.487v-9.876c0-1.749 2.086-2.655 3.365-1.462z"/>
     </symbol>
-    <symbol id="arrow" viewBox="0 0 84 32">
+    <symbol id="white-arrow" viewBox="0 0 82 32">
+      <path fill="#fcfcfc" style="fill:var(--color2, #fcfcfc)" d="M81.414 17.414a2 2 0 0 0 0-2.828L68.686 1.858a2 2 0 1 0-2.828 2.828L77.172 16 65.858 27.314a2 2 0 1 0 2.828 2.828l12.728-12.728zM0 18h80v-4H0v4z"/>
+    </symbol>
+    <symbol id="black-arrow" viewBox="0 0 84 32">
       <path d="M81.949 17.191a2 2 0 0 0 0-2.828L69.221 1.635a2 2 0 0 0-2.829 2.828l11.314 11.314-11.314 11.314a2 2 0 0 0 2.829 2.829l12.728-12.728zm-81.884.586h80.469v-4H.065v4z"/>
     </symbol>
     <symbol id="ice-crema" viewBox="0 0 32 32">
@@ -34,7 +37,7 @@
       <path fill="#84a178" style="fill:var(--color4, #84a178)" d="M20.446 15.982h-2.61v9.619h-3.955v-9.619H12v-3.38h1.881v-2.187c0-1.564.739-4.014 3.99-4.014l2.929.012v3.281h-2.125c-.349 0-.839.175-.839.921v1.989h2.955l-.346 3.377z"/>
     </symbol>
     <symbol id="arrow-small" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
-    </symbol>
+  <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
+</symbol>
   </defs>
 </svg>
