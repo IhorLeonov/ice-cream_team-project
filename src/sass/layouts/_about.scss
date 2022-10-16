@@ -4,6 +4,19 @@
   padding: 60px, 20px;
   text-align: center;
 
+  &.section {
+    padding-bottom: 40px;
+  }
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__inline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__uppertitle {
     margin-bottom: 12px;
 
@@ -56,8 +69,5 @@
 
     text-align: center;
     width: 220px;
-  }
-  &__button {
-    margin-bottom: 42px;
   }
 }
