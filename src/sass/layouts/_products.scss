@@ -1,0 +1,163 @@
+.products {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+  
+    background-image: url(../images/bg/bg-ice-cream.sec4.mobile_@1x.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    &__label-title {
+      margin-bottom: 12px;
+  
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+  
+      color: #131313;
+    }
+    &__title {
+      margin-bottom: 148px;
+  
+      font-family: 'Seymour One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+  
+      color: #131313;
+    }
+    & .item {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 164px;
+      padding-right: 40px;
+      padding-left: 40px;
+      padding-bottom: 5px;
+  
+      border-radius: 24px;
+    }
+  }
+  .picture-container {
+    display: inline-block;
+    max-width: 200px;
+    margin-bottom: -80px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  
+    & .img {
+      transform: translateY(-11px);
+    }
+  }
+  .ice-cream {
+    background-color: #aec6a5;
+  
+    &__picture-container {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    }
+  }
+  
+  .ice-coffee {
+    background-color: #efd478;
+  
+    &__picture-container {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    }
+  }
+  
+  .milkshak {
+    background-color: #d6936d;
+  
+    &__picture-container {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+  .product {
+    &__title {
+      margin-bottom: 40px;
+  
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+  
+      color: #131313;
+    }
+    &__text {
+      margin-bottom: 110px;
+  
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 176%;
+      /* or 25px */
+      letter-spacing: 0.04em;
+  
+      color: #131313;
+    }
+  }
+  .product__button {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+  
+    & .arrow {
+      &--hover,
+      &--focus {
+        opacity: 0;
+      }
+    }
+  
+    &:hover,
+    &:focus {
+      .arrow--default {
+        opacity: 0;
+      }
+    }
+  
+    &:hover {
+      .arrow--hover {
+        opacity: 1;
+      }
+    }
+  
+    &:focus {
+      .arrow--focus {
+        opacity: 1;
+      }
+    }
+  }
