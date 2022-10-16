@@ -1,14 +1,14 @@
 .section__contacts {
-    background-color: #84A178;
-    position: relative;
+  background-color: #84a178;
+  position: relative;
 }
 
 .contacts__item {
-    padding: 40px 32px;
-    background-color: #fcfcfc;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    width: 280px;
+  padding: 40px 32px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  width: 280px;
 }
 
 // .contacts {
@@ -16,116 +16,116 @@
 //     bottom: 345px;
 // }
 
-
-.category {
-    background-color: #f8d24e;
-    border-radius: 4px;
-    width: 80px;
-    height: 16px;
-    padding-bottom: 20px;
-}
-
-.representation {
+.contacts__category {
+  background-color: #f8d24e;
+  border-radius: 4px;
+  width: 80px;
+  height: 16px;
     text-align: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.04em;
-    color: #131313;
+  margin-bottom: 20px;
 }
 
-// .address_style {
-//     width: 190px;
-// }
+.contacts__representation {
 
-.address {
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 0.04em;
-    line-height: 1.83;
-    color: #d6936d;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #131313;
 }
 
-// .location {
-//     padding-bottom: 26px;
-// }
-
-.location::after {
-    content: '';
-    display: block;
-    border: 1px solid #e1e1e1;
-    margin-bottom: 24px;
-}
-
-.work_time {
-    color: #ababab;
+.contacts__city {
     margin-bottom: 8px;
 }
 
-.work_time::after {
-    content: '';
-    display: block;
-    border: 1px solid #e1e1e1;
-    margin-bottom: 24px;
+
+
+.contacts__address {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1.83;
+  color: #d6936d;
+  margin-bottom: 24px;
+}
+
+
+.contacts__address::after {
+  content: '';
+  display: block;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+}
+
+.contacts-timetable {
+  color: #ababab;
+  margin-bottom: 8px;
+}
+
+.contacts-timetable::after {
+  content: '';
+  display: block;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 767px) {
-    .contacts__item {
-        margin-bottom: 20px;
-    }
+  .contacts__item {
+    margin-bottom: 20px;
+  }
 }
 
 .btn_location {
-    display: block;
-    width: 196px;
-    height: 42px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #f8d24e;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    color: #131313;
-    border: none;
+  display: block;
+  width: 196px;
+  height: 42px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f8d24e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #131313;
+  border: none;
 
-    &:hover {
-        background-color: #0a8817;
-    }
+  &:hover {
+    background-color: #0a8817;
+  }
 
-    &:focus {
-        background-color: #0a8817;
-        color: #fcfcfc;
-    }
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
 
-    &:disabled {
-        background-color: #ababab;
-    }
+  &:disabled {
+    background-color: #ababab;
+  }
 }
 
 .btn_franchise {
-    display: block;
-    width: 196px;
-    height: 42px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 0 auto;
-    padding: 0;
-    color: #131313;
-    background-color: #84A178;
-    border: 2px solid #F8D24E;
+  display: block;
+  width: 196px;
+  height: 42px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  color: #131313;
+  background-color: #84a178;
+  border: 2px solid #f8d24e;
 
-    &:hover {
-        border: 2px solid #0A8817;
-    }
+  &:hover {
+    border: 2px solid #0a8817;
+  }
 
-    &:focus {
-        border: 2px solid #0A8817;
-        color: #fcfcfc;
-    }
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fcfcfc;
+  }
 
-    &:disabled {
-        border: 2px solid #ABABAB;
-    }
+  &:disabled {
+    border: 2px solid #ababab;
+  }
 }
