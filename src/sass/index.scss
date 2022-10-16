@@ -1,11 +1,27 @@
+// utils styles
 @import './common';
-@import './header';
-@import './hero';
-@import './products';
-@import './about';
-@import './advantages';
-@import './gallery';
-@import './contacts';
-@import './customer-reviews';
-@import './footer';
-@import './modals';
+@import './utils/variables';
+
+// @import './utils/normalize';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+// base styles
+@import './base/reset';
+@import './base/base';
+@import './base/container';
+
+// layout styles
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/contacts';
+@import './layouts/customer-reviews';
+@import './layouts/footer';
+@import './layouts/modals';
+
+// components styles
