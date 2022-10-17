@@ -1,0 +1,22 @@
+.how-its-made_modal {
+    @media screen and(min-width: 481px) {
+        padding: 32px 60px;
+    }
+}
+
+.how-its-made_video {
+    margin-bottom: 20px;
+
+    @media screen and(min-width: 481px) {
+        width: 448px;
+        height: 205px;
+    }
+}
+
+.how-its-made_text {
+    font-family: 'Montserrat';
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    color: #131313;
+}
