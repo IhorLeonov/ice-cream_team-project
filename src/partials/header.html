@@ -1,28 +1,41 @@
-<header>
-  <div>
-    <a href="./index.html">
-      <svg width="60" height="65">
-        <use></use>
-      </svg>
+<header class="header">
+  <div class="container header__container">
+    <a class="header__logo" href="./index.html">
+      <img
+        class="logo__img img"
+        srcset="
+          ./images/header/logo.mobile_@1x.png  41w,
+          ./images/header/logo.tablet_@1x.png  48w,
+          ./images/header/Logo.desc_@1x.png    60w,
+          ./images/header/logo.mobile_@2x.png  81w,
+          ./images/header/logo.tablet_@2x.png  96w,
+          ./images/header/Logo.desc_@2x.png   120w
+        "
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 41px,
+                100vw"
+        src="./images/header/logo.mobile_@1x.png"
+        alt="header-logo"
+      />
     </a>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">Home</a>
+    <nav class="header__nav">
+      <ul class="header__list list">
+        <li class="header__item">
+          <a class="header__link link" href="./index.html">Home</a>
         </li>
-        <li>
-          <a href="#about">How it’s made?</a>
+        <li class="header__item">
+          <a class="header__link link" href="#about">How it’s made?</a>
         </li>
-        <li>
-          <a href="#products">Our products</a>
+        <li class="header__item">
+          <a class="header__link link" href="#products">Our products</a>
         </li>
-        <li>
-          <a href="#contacts">Contact</a>
+        <li class="header__item">
+          <a class="header__link link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
 
-      <button type="button" data-modal="buy-now" class="open-modal js-open-modal">Buy Now</button>
+      <button type="button" data-modal="buy-now" class="header__btn open-modal js-open-modal">Buy Now</button>
+
   </div>
 </header>
