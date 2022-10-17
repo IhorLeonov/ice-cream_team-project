@@ -160,30 +160,29 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .contacts__list {
     display: flex;
     gap: 16px;
   }
-  
+
   @media screen and (min-width: 1200px) {
     .contacts__list {
-            gap: 32px;
-        }
+      gap: 32px;
+    }
   }
 }
 
 .contacts__list {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 60px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 64px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 64px;
+  }
 }
 
 .btn_location {
@@ -214,10 +213,9 @@
     background-color: #ababab;
   }
 
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 16px;
-}
-
+  }
 }
 
 .btn_franchise {
@@ -247,12 +245,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    .contacts_buttons {
-        display: flex;
-        gap: 16px;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        justify-content: center;
-    }
+  .contacts_buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
