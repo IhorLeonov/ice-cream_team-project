@@ -5,6 +5,11 @@ body {
   color: #fcfcfc;
 }
 
+a,
+button {
+  cursor: url('../images/vector.png'), default;
+}
+
 img {
   display: block;
   max-width: 100%;

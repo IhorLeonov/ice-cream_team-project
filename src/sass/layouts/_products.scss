@@ -5,7 +5,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-
   background-color: #ffffff;
 
   &__content {
@@ -16,12 +15,12 @@
     background-size: contain;
     background-position: top;
     background-repeat: repeat;
-    background-image: url(../images/bg/bg.sec2.mobile_@1x.png);
+    background-image: url('../images/bg/bg.sec2.mobile_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bg/bg.sec2.mobile_@2x.png);
+      background-image: url('../images/bg/bg.sec2.mobile_@2x.png');
     }
   }
 
@@ -30,11 +29,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/bg/bg.sec.2.tablet_@1x.png);
+    background-image: url('../images/bg/bg.sec.2.tablet_@1x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bg/bg.sec.2.tablet_@2x.png);
+      background-image: url('../images/bg/bg.sec.2.tablet_@2x.png');
     }
   }
 
@@ -42,11 +41,11 @@
     display: flex;
     justify-content: center;
     max-width: 1600px;
-    background-image: url(../images/bg/bg.sec.2_@1x.png);
+    background-image: url('../images/bg/bg.sec.2_@1x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bg/bg.sec.2_@2x.png);
+      background-image: url('../images/bg/bg.sec.2_@2x.png');
     }
   }
 
