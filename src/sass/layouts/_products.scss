@@ -5,29 +5,65 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__content {
-    max-width: 1200px;
-  }
-  @media screen and (max-width: 767px) {
-    max-width: 480px;
-    background-size: contain;
-    background-position: top;
-    background-repeat: repeat;
-    background-image: url(../images/bg/bg.sec2.mobile_@1x.png);
+  background-color: #fff;
+  max-width: 1600px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg/bg.sec2.mobile_@2x.png);
-    }
+  // &__content {
+  //   max-width: 1200px;
+  // }
+
+  // @media screen and (max-width: 767px) {
+  //   max-width: 480px;
+  //   background-size: contain;
+  //   background-position: top;
+  //   background-repeat: repeat;
+  //   background-image: url(../images/bg/bg.sec2.mobile_@1x.png);
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/bg/bg.sec2.mobile_@2x.png);
+  //   }
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   max-width: 768px;
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-image: url(../images/bg/bg.sec.2.tablet_@1x.png);
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/bg/bg.sec.2.tablet_@2x.png);
+  //   }
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   justify-content: center;
+  //   max-width: 1600px;
+  //   background-image: url(../images/bg/bg.sec.2_@1x.png);
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/bg/bg.sec.2_@2x.png);
+  //   }
+  // }
+
+  // Mobile screen
+  background-image: url(../images/bg/bg.sec2.mobile_@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg/bg.sec2.mobile_@2x.png);
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  // Tablet screen
+  @media screen and (min-width: 481px) {
     background-image: url(../images/bg/bg.sec.2.tablet_@1x.png);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -35,11 +71,10 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    max-width: 1600px;
+  // Desktop screen
+  @media screen and (min-width: 769px) {
     background-image: url(../images/bg/bg.sec.2_@1x.png);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
