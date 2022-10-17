@@ -1,4 +1,12 @@
-.modal_title {
+.buy-now_modal {
+  
+  @media screen and(max-width: 480px) {
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+}
+
+.buy-now_title {
   margin-bottom: 84px;
 
   @media screen and(min-width: 768px) {

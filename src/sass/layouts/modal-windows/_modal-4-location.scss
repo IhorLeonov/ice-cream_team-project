@@ -1,0 +1,16 @@
+.location_modal {
+    @media screen and(min-width: 481px) {
+        padding: 32px 60px;
+    }
+}
+
+.location-image {
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    @media screen and(min-width: 481px)  {
+        width: 448px;
+        height: 260px;
+    }
+}
