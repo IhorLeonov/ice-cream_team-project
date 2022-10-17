@@ -9,7 +9,7 @@
   background-color: #ffffff;
 
   &__content {
-    max-width: 1200px;
+    max-width: $desktop;
   }
   @media screen and (max-width: 480px) {
     max-width: 480px;
@@ -26,7 +26,7 @@
   }
 
   @media screen and (min-width: 481px) {
-    max-width: 768px;
+    max-width: $tablet;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,12 +62,12 @@
 
     color: #131313;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 22px;
       line-height: 27px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 30px;
       line-height: 37px;
       letter-spacing: 0.04em;
@@ -88,14 +88,14 @@
 
     color: #131313;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 140px;
 
       font-size: 34px;
       line-height: 43px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 230px;
 
       font-size: 36px;
@@ -114,10 +114,10 @@
   transform: translateY(-50%);
   border-radius: 50%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: -70px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 300px;
     height: 300px;
     margin-bottom: -120px;
@@ -151,7 +151,7 @@
         background-image: url(../images/products/Ice-cream.sec.2.mobile_@2x.png);
       }
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
         width: 300px;
         height: 300px;
         transform: translateY(-17px);
@@ -204,7 +204,7 @@
         background-image: url(../images/products/Ice-coffe.sec.2.mobile_@2x.png);
       }
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
         width: 300px;
         height: 300px;
         transform: translateY(-17px);
@@ -257,7 +257,7 @@
         background-image: url(../images/products/Milkshakes.sec.2.mobile_@2x.png);
       }
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
         width: 300px;
         height: 300px;
         transform: translateY(-17px);
@@ -294,7 +294,7 @@
     margin-bottom: 164px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -302,7 +302,7 @@
     padding-left: 26px;
     min-height: 428px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-right: 63px;
     padding-left: 63px;
     min-height: 535px;
@@ -321,11 +321,11 @@
 
     color: #131313;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 22px;
       line-height: 27px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 65px;
 
       font-size: 30px;
@@ -345,16 +345,16 @@
 
     color: #131313;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: auto;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 16px;
     }
   }
 }
 .products__list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -368,7 +368,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -376,7 +376,7 @@
     & .product {
       flex-basis: calc((100% - 64px) / 3);
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
         max-width: 370px;
       }
     }
@@ -414,7 +414,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 30px;
   }
 }
