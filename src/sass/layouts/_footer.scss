@@ -28,7 +28,7 @@
     @media screen and (min-width: 1200px) {
       font-style: normal;
       text-transform: uppercase;
-      color: $primery-text-color;
+      color: var(--primery-text-color);
       font-size: 30px;
       line-height: 1.2;
       font-weight: 400;
