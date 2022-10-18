@@ -1,15 +1,12 @@
 .products {
+  @include section;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 
   background-color: #ffffff;
 
-  &__content {
-    max-width: $desktop;
-  }
+// Mobile
   @media screen and (max-width: 480px) {
     max-width: 480px;
     background-size: contain;
@@ -24,6 +21,7 @@
     }
   }
 
+  // Tablet
   @media screen and (min-width: 481px) {
     max-width: $tablet;
     background-size: cover;
@@ -37,10 +35,11 @@
     }
   }
 
+  // Desctop
   @media screen and (min-width: 769px) {
     display: flex;
     justify-content: center;
-    max-width: 1600px;
+    max-width: 1200px;
     background-image: url('../images/bg/bg.sec.2_@1x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -49,56 +48,58 @@
     }
   }
 
+  // Лейбл заголовка
   &__label-title {
     margin-bottom: 12px;
 
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 22px;
+    line-height: calc(22px / 18px);
     text-transform: uppercase;
 
     color: #131313;
 
     @media screen and (min-width: $tablet) {
       font-size: 22px;
-      line-height: 27px;
+      line-height: calc(27px / 22px);
     }
 
     @media screen and (min-width: $desktop) {
       font-size: 30px;
-      line-height: 37px;
+      line-height: calc(37px / 30px);
       letter-spacing: 0.04em;
     }
   }
 
+  // Заголовок секції
   &__title {
     margin-bottom: 148px;
 
     font-family: 'Seymour One';
-    font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 38px;
+    line-height: calc(38px / 30px);
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #131313;
 
+    // Tablet
     @media screen and (min-width: $tablet) {
       margin-bottom: 140px;
 
       font-size: 34px;
-      line-height: 43px;
+      line-height: calc(43px / 34px);
     }
 
+    // Desctop
     @media screen and (min-width: $desktop) {
       margin-bottom: 230px;
 
       font-size: 36px;
-      line-height: 45px;
+      line-height: calc(45px / 36px);
       letter-spacing: 0.06em;
     }
   }
@@ -106,6 +107,7 @@
     display: inline-block;
   }
 }
+// Контейнер для картинок карток
 .picture-container {
   display: inline-block;
   max-width: 200px;
@@ -113,9 +115,11 @@
   transform: translateY(-50%);
   border-radius: 50%;
 
+  // Tablet
   @media screen and (min-width: $tablet) {
     margin-bottom: -70px;
   }
+  // Desctop
   @media screen and (min-width: $desktop) {
     width: 300px;
     height: 300px;
@@ -135,6 +139,7 @@
       #d9d9d9;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 
+    // Картинки карток
     &::before {
       content: '';
       display: block;
@@ -290,7 +295,10 @@
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
-    margin-bottom: 164px;
+
+    &:not(:last-child) {
+      margin-bottom: 164px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -307,14 +315,14 @@
     min-height: 535px;
   }
 
+// Заголовок картки
   &__title {
     margin-bottom: 40px;
 
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
+    line-height: calc(24px / 20px);
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
@@ -322,23 +330,22 @@
 
     @media screen and (min-width: $tablet) {
       font-size: 22px;
-      line-height: 27px;
+      line-height: calc(27px / 22px);
     }
     @media screen and (min-width: $desktop) {
       margin-bottom: 65px;
 
       font-size: 30px;
-      line-height: 37px;
+      line-height: calc(37px / 30px);
     }
   }
   &__text {
     margin-bottom: 110px;
 
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 176%;
+    line-height: calc(25px / 14px);
     /* or 25px */
     letter-spacing: 0.04em;
 
@@ -370,10 +377,10 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 29px;
 
     & .product {
-      flex-basis: calc((100% - 64px) / 3);
+      flex-basis: calc((100% - 58px) / 3);
 
       @media screen and (min-width: $desktop) {
         max-width: 370px;
@@ -391,6 +398,7 @@
     &--hover,
     &--focus {
       opacity: 0;
+      transition: opacity var(--main-animation);
     }
   }
 
@@ -399,6 +407,7 @@
     .arrow--default,
     .arrow--focus {
       opacity: 0;
+      transition: opacity var(--main-animation);
     }
   }
 
@@ -408,6 +417,7 @@
     }
     .arrow--focus {
       opacity: 0;
+      transition: opacity var(--main-animation);
     }
   }
 
@@ -417,6 +427,7 @@
     }
     .arrow--hover {
       opacity: 0;
+      transition: opacity var(--main-animation);
     }
   }
 
