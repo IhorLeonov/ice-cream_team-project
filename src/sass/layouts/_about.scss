@@ -84,11 +84,6 @@
       transform: translateY(25.88px);
     }
   }
-  &__inline {
-    @media screen and (min-width: 768px) {
-      text-align: start;
-    }
-  }
   &__uppertext {
     margin-bottom: 4px;
     font-weight: 400;
@@ -152,7 +147,7 @@
     padding: 0;
 
     background-color: var(--primery-accent-color);
-
+    transition: background-color var(--main-animation);
     &:hover {
       background-color: #0a8817;
     }
