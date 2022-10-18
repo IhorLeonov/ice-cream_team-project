@@ -1,35 +1,11 @@
 .gallery {
   padding-top: 0;
   padding-bottom: 0;
-}
 
-.gallery__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-}
-
-.gallery__list {
-  @extend %list;
-}
-
-.gallery__item {
-  &:not(:last-child) {
-    margin-right: 1px;
-  }
-}
-
-.gallery .image {
-  margin: 0 auto;
-  border-radius: 18px;
-}
-
-.gallery {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fcfcfc;
+  background-color: var(--primery-text-color);
   background-position: center;
   background-image: url(../images/bg/bg-ice-cream.sec4.mobile_@1x.png);
   background-size: cover;
@@ -70,20 +46,51 @@
       background-image: url(../images/bg/bg.sec.2_@2x.png);
     }
   }
+
+  & .image {
+    margin: 0 auto;
+    border-radius: 18px;
+  }
+
+  & .reviews {
+    padding-top: 80px;
+    padding-bottom: 48px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 128px;
+      padding-bottom: 100px;
+    }
+  }
 }
 
-.reviews {
-  padding-top: 80px;
-  padding-bottom: 48px;
+.gallery__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.gallery__list {
+  @extend %list;
+  transform: translateY(-24px);
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    transform: translateY(-164px);
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 128px;
-    padding-bottom: 100px;
+    transform: translateY(-94px);
+  }
+}
+
+.gallery__item {
+  &:not(:last-child) {
+    margin-right: 1px;
   }
 }
 
@@ -92,6 +99,7 @@
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+
   list-style: none;
 }
 
@@ -119,16 +127,18 @@
 }
 
 .reviews__description {
-  background-color: #84a178;
   margin-bottom: 30px;
   padding: 34px 39px;
-  border-radius: 10px;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 12px;
   line-height: calc(31 / 12);
   text-align: center;
-  color: #fcfcfc;
+
+  color: var(--primery-text-color);
+  background-color: #84a178;
+
+  border-radius: 10px;
 
   @media screen and (min-width: 768px) {
     padding: 28px 80px;
