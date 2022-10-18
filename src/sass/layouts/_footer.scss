@@ -99,6 +99,7 @@
   color: #84A178;
   border-radius: 50%;
   transition: color var(--main-animation);
+  
   &:hover {
     color: var(--primery-text-color);
   }
@@ -110,7 +111,7 @@
 .socials__icon {
   fill: currentColor;
 }
-// Contact //
+// Contacts //
 .footer-contacts {
   display: flex;
   margin-bottom: 40px;
