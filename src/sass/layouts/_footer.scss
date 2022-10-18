@@ -115,41 +115,43 @@
 .footer-contacts {
   display: flex;
   margin-bottom: 40px;
-}
-.footer-contacts__address {
-  display: flex;
-  margin-left: auto;
-}
-.footer-contacts__data:not(:last-child) {
-  margin-right: 4px;
-}
-.footer-contacts__text {
-  font-family: 'Montserrat', sans-serif;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  &__address {
+    text-align: right;
+  }
+  &__text {
+    font-family: 'Montserrat' sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.86;
     color: var(--primery-title-color);
-    @media screen and (max-width: 1199.98px) {
+    @media screen and(min-width:768px) and (max-width: 1199px) {
       font-size: 14px;
     }
-    @media screen and (max-width: 767.98px) {
-      font-size: 12px;
+    @media screen and(min-width:1200px) {
+      font-size: 16px;
+      letter-spacing: 0.2em;
     }
-}
-.footer-contacts__tel {
-  font-family: 'Montserrat', sans-serif;
+  }
+  &__tel {
+    font-family: 'Montserrat' sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 12px;
     line-height: 1.86;
     color: var(--primery-text-color);
-    @media screen and (max-width: 1199.98px) {
+    @media screen and(min-width:768px) and (max-width: 1199px) {
       font-size: 14px;
     }
-    @media screen and (max-width: 767.98px) {
-      font-size: 12px;
+    @media screen and(min-width:1200px) {
+      font-size: 16px;
+      letter-spacing: 0.2em;
     }
+  }
 }
 // Copyright //
 .copyright {
