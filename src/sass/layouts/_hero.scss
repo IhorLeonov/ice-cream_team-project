@@ -1,0 +1,396 @@
+.hero {
+
+   background-color: #84a178;
+   @include for-phone-up{ height:448px;}
+   @include for-tablet-up{ height:338px;
+   padding: 20px 20px;}
+   @include for-desktop{ height:581px };
+
+ &__container{
+   position: relative;
+ }
+&__wrap {
+   @include for-tablet-up {
+      width: 162px;
+      margin-top: 0;
+   }
+
+   @include for-desktop {
+      width: 277px;
+      margin-top: 0;
+   }
+
+   margin-top: 90px;
+   display: flex;
+   flex-direction: column;
+
+   width: 218px;
+}
+
+
+   &__title{
+      z-index: 2;
+      font-size: 26px;
+      line-height: 1.07;
+      font-weight: 400;
+      font-family: 'Montserrat';
+      color: #ffffff;
+      margin-bottom: 20px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      @include for-tablet-up{
+         font-size:22px ;
+      }
+      @include for-desktop{
+         font-size:38px ;
+      }
+   }
+      &__title-passion{
+         font-size: 48px;
+         color: red ;
+         @include for-tablet-up {
+               font-size:34px ;
+            }
+         
+            @include for-desktop {
+               font-size: 58px;
+            }
+      }
+
+     &__text{
+      position: absolute;
+      color: white;
+      z-index: 1;
+      bottom:-125% ;
+      left: 25.2%;
+      
+      @include for-phone-up{
+         display: none;
+      }
+      @include for-tablet-up{
+         font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.1;
+            margin-bottom: 7px;    
+      }
+
+      @include for-desktop{
+       left: 19%;
+       bottom: -150%;
+        }
+     } 
+}
+
+.thumb-numb {
+   position: absolute;
+   left: 90%;
+
+   @include for-phone-up {
+      display: none;
+   }
+
+   &__numbers {
+      position: relative;
+
+      @include for-desktop {
+         font-size: 46px;
+         line-height: 53px;
+      }
+
+      &::after {
+         @include for-phone-up {
+            display: none;
+         }
+
+         @include for-desktop {
+            content: '';
+            background-image: url('/src/images/hero/numbers-Ellipse-dekstop.png');
+            width: 36px;
+            height: 36px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            bottom: 55%;
+            left: 85%;
+         }
+
+         content: '';
+         background-image: url('/src/images/hero/number-Ellipse.png');
+         width: 16px;
+         height: 16px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         display: block;
+         position: absolute;
+         bottom: 55%;
+         left: 85%;
+      }
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: red;
+   }
+
+   &__text-cafes {
+      @include for-desktop {
+         font-size: 14px;
+         line-height: 1.28;
+         padding-right: 15px;
+      }
+
+      margin: 0;
+      padding: 0 10px 17px 0;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.1;
+      text-align: right;
+      color: white;
+   }
+
+   &__text {
+
+      @include for-desktop {
+         font-size: 14px;
+         line-height: 1.28;
+      }
+
+      margin: 0;
+      font-family:'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.1;
+      text-align: right;
+      color: white;
+   }
+}
+.wrap-hero-buttons{
+   // position: absolute;
+   // z-index: 9;
+   position: absolute;
+   z-index: 2;
+}
+
+.product-button {
+   margin-right: 4px;
+   border-radius: 20px;
+   border: none;
+   cursor: pointer;
+   padding: 8px 16px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 8px;
+   line-height: 1.25;
+   color: white;
+   background-color: red;
+
+   @include for-desktop {
+      font-size: 14px;
+      line-height: 1.28;
+      padding: 11px 23px;
+   }
+}
+
+.made-button {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 8px;
+   line-height: 1.25;
+   padding: 8px 16px;
+   border-radius: 20px;
+   border: none;
+ cursor: pointer;
+   background-color: white;
+   color: red;
+
+   @include for-desktop {
+      font-size: 14px;
+      line-height: 1.28;
+      padding: 11px 23px;
+   }
+}
+
+.hero-favicon {
+   @include for-phone-up {
+      display: none;
+   }
+
+   @include for-tablet-up {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-color: white;
+   }
+      @include for-desktop{
+         width: 24px;
+         height: 24px;
+         border-radius: 50%;
+         padding-top: 2px;
+            padding-right: 2px;
+            padding-bottom: 0;
+            padding-left: 0;
+            background-color: white;
+            left: 19%;
+            bottom: -165%;
+      }
+position: absolute;
+bottom: -146%;
+left: 25.2%;
+cursor: pointer;
+
+&__arrow{
+fill: red;
+margin: 0;
+
+
+@include for-tablet-up{
+
+width: 14px;
+height: 14px;
+}
+@include for-desktop{
+width: 20px;
+height: 20px;
+} 
+}
+}
+.mobile-ice-cream {
+   
+   @include for-tablet-up-min{
+display: none;
+   }
+position: absolute;
+z-index: 1;
+top:-88.5%;
+right: 0;
+}
+.mobile-ellipse{
+  
+   @include for-tablet-up-min {
+display: none;
+   }
+   position: absolute;
+   top: -77.5%;
+   right: 10%;
+ }
+
+.tablet-milk{
+   @include for-phone-up{
+      display: none;
+   }
+   @include for-desktop{
+      display: none;
+        }
+   //    position: absolute;
+   //   top: 115%;
+   position: absolute;
+   top: 145%;
+} 
+.tablet-girl{
+@include for-phone-up {
+      display: none;
+   }
+
+   @include for-desktop {
+      display: none;
+
+   }
+   position: absolute;
+   bottom: -214px;
+   left: 73%;
+   z-index: 2;
+ 
+}
+.tablet-ellipse{
+@include for-phone-up {
+      display: none;
+   }
+
+   @include for-desktop {
+      display: none;
+   }
+   position: absolute;
+   top:-50%;
+   left: 33%;
+}
+.tablet-ice-cream{
+@include for-phone-up {
+      display: none;
+   }
+
+   @include for-desktop {
+      display: none;
+
+   }
+   position: absolute;
+   top:-18%;
+   left: 41.5%;
+   z-index: 2;
+}
+
+.dekstop-milk{
+@include for-phone-up {
+      display: none;
+   }
+
+   @include for-tablet-up {
+      display: none;
+
+   }
+   position: absolute;
+   bottom: -190%;
+}
+.dekstop-girl {
+@include for-phone-up {
+      display: none;
+   }
+
+   @include for-tablet-up {
+      display: none;
+   }
+   position: absolute;
+   left: 72%;
+   bottom: -219%;
+   z-index: 1;
+}
+.dekstop-ellipse{
+   @include for-phone-up {
+      display: none;
+   }
+
+   @include for-tablet-up {
+      display: none;
+   }
+   position: absolute;
+   top:-28%;
+   left: 38%;
+}
+.dekstop-ice-cream{
+   @include for-phone-up {
+         display: none;
+      }
+   
+      @include for-tablet-up {
+         display: none;   
+      }
+      position: absolute;
+      left: 50%;
+      top:-22%;
+      z-index: 2;
+}
