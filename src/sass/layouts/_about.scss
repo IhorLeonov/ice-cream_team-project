@@ -39,6 +39,10 @@
       letter-spacing: 0.04em;
       line-height: 1.23;
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 1.24;
+    }
   }
   &__title {
     font-family: 'Seymour One';
@@ -60,6 +64,11 @@
       letter-spacing: 0.06em;
       width: 100%;
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 82px;
+    }
   }
   &__shape {
     display: block;
@@ -75,6 +84,11 @@
       border-radius: 165.879px;
       margin-bottom: 0px;
     }
+    @media screen and (min-width: 1200px) {
+      width: 500px;
+      height: 500px;
+      border-radius: 250px;
+    }
   }
   &__image {
     transform: translateY(21.82px);
@@ -83,10 +97,19 @@
       width: 335px;
       transform: translateY(25.88px);
     }
+    @media screen and (min-width: 1200px) {
+      width: 490px;
+      transform: translateY(25.88px);
+    }
   }
   &__inline {
     @media screen and (min-width: 768px) {
       text-align: start;
+    }
+  }
+  &__article {
+    @media screen and (min-width: 768px) {
+      padding-right: 40px;
     }
   }
   &__uppertext {
@@ -105,6 +128,12 @@
       margin-bottom: 4px;
       margin-top: 5px;
     }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+      font-size: 16px;
+      margin-bottom: 8px;
+      margin-top: 90px;
+    }
   }
   &__text {
     margin-bottom: 20px;
@@ -120,6 +149,11 @@
       line-height: 1.76;
       margin-bottom: 8px;
     }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+      font-size: 14px;
+      line-height: 1.94;
+    }
   }
   &__lowertext {
     font-style: normal;
@@ -132,6 +166,10 @@
     text-align: start;
     @media screen and (max-width: 767px) {
       display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+      font-size: 14px;
     }
   }
 }
