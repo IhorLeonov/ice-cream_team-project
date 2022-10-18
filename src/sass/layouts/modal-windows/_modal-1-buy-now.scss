@@ -111,7 +111,8 @@ margin-left: auto;
   padding: 8px 12px 7px 12px;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  outline: 1px solid #84a178;
+  border: none;
   border-radius: 10px;
 
   font-family: 'Montserrat';
@@ -129,6 +130,14 @@ margin-left: auto;
   line-height: calc(17 / 12);
 
   color: #131313;
+}
+
+input:valid {
+  outline: 1px solid #84a178;
+}
+
+.input:invalid {
+  outline: 2px solid red;
 }
 
 .checkbox {
