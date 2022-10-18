@@ -98,6 +98,37 @@
   border: none;
 }
 
+.modal-submit_button {
+  margin-top: 24px;
+  width: 114px;
+  height: 42px;
+
+  background-color: #f8d24e;
+  border: none;
+  border-radius: 10px;
+
+  color: #131313;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  @media screen and(min-width:481px) {
+    margin-top: 32px;
+    
+    width: 121px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
+.icon-close-modal {
+  @media screen and(max-width: 480px) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
 // необовязкова фігня
 // .buttons {
 //   padding: 15px;
