@@ -1,5 +1,5 @@
 .about {
-  background-color: #84A178;
+  background-color: #84a178;
   text-align: center;
 
   &.section {
@@ -17,11 +17,12 @@
     align-items: center;
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: flex-start;
       margin-bottom: 8px;
     }
   }
+
   &__uppertitle {
     margin-bottom: 12px;
 
@@ -38,6 +39,10 @@
       font-size: 22px;
       letter-spacing: 0.04em;
       line-height: 1.23;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 1.24;
     }
   }
   &__title {
@@ -60,12 +65,22 @@
       letter-spacing: 0.06em;
       width: 100%;
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 82px;
+    }
   }
   &__shape {
     display: block;
     width: 278.19px;
     height: 278.25px;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
     border-radius: 140.182px;
     margin-bottom: 60px;
@@ -74,6 +89,12 @@
       height: 330px;
       border-radius: 165.879px;
       margin-bottom: 0px;
+      margin-right: 100px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 500px;
+      height: 500px;
+      border-radius: 250px;
     }
   }
   &__image {
@@ -83,10 +104,9 @@
       width: 335px;
       transform: translateY(25.88px);
     }
-  }
-  &__inline {
-    @media screen and (min-width: 768px) {
-      text-align: start;
+    @media screen and (min-width: 1200px) {
+      width: 490px;
+      transform: translateY(25.88px);
     }
   }
   &__uppertext {
@@ -105,6 +125,12 @@
       margin-bottom: 4px;
       margin-top: 5px;
     }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+      font-size: 16px;
+      margin-bottom: 8px;
+      margin-top: 90px;
+    }
   }
   &__text {
     margin-bottom: 20px;
@@ -120,6 +146,11 @@
       line-height: 1.76;
       margin-bottom: 8px;
     }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+      font-size: 14px;
+      line-height: 1.94;
+    }
   }
   &__lowertext {
     font-style: normal;
@@ -132,6 +163,10 @@
     text-align: start;
     @media screen and (max-width: 767px) {
       display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+      font-size: 14px;
     }
   }
 }

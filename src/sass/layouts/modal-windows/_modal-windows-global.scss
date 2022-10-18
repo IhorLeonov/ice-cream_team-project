@@ -3,6 +3,8 @@
   opacity: 0;
   visibility: hidden;
 
+  // pointer-events: none;
+
   overflow-y: scroll;
 
   /*  Установаем ширину окна  */
@@ -77,6 +79,8 @@
 .overlay {
   opacity: 0;
   visibility: hidden;
+
+  // pointer-events: none;
 
   position: fixed;
   top: 0;

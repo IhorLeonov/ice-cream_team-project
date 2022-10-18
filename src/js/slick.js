@@ -1,17 +1,17 @@
 $('.gallery-slider').slick({
   dots: false,
   infinite: true,
-  speed: 200,
+  speed: 1000,
   slidesToShow: 1,
   adaptiveHeight: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
 });
 
 $('.reviews-slider').slick({
   dots: true,
   infinite: true,
-  speed: 200,
+  speed: 300,
   slidesToShow: 1,
   adaptiveHeight: true,
 });
