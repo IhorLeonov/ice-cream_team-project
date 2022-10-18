@@ -11,7 +11,7 @@
           ./images/header/logo.tablet_@2x.png  96w,
           ./images/header/Logo.desc_@2x.png   120w
         "
-        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 41px,
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 480px) 41px, (max-width: 479.5px) 41px,
                 100vw"
         src="./images/header/logo.mobile_@1x.png"
         alt="header-logo"
@@ -35,7 +35,21 @@
       </ul>
     </nav>
 
-      <button type="button" data-modal="buy-now" class="header__btn open-modal js-open-modal">Buy Now</button>
+    <button class="header__burger-menu">
+      <svg class="header__mobile-menu-icon" width="32" height="32">
+        <use href="./images/svg/icons.svg#menu-icon"></use>
+      </svg>
+    </button>
 
+    <button
+      type="button"
+      data-modal="buy-now"
+      class="header__btn open-modal js-open-modal"
+    >
+      Buy Now
+      <svg class="header__btn-icon" width="12" height="12px">
+        <use href="./images/svg/icons.svg#btn-arrow"></use>
+      </svg>
+    </button>
   </div>
 </header>
