@@ -19,6 +19,9 @@
       font-size: 48px;
       line-height: 1.23;
     }
+    @media screen and (min-width: 768px) {
+      font-size: 58px;
+    }
   }
   &__list {
     padding: 0;
@@ -84,6 +87,12 @@
       line-height: 1.74;
       font-weight: 400;
       width: 152px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.02em;
+      width: 368px;
     }
   }
 }
