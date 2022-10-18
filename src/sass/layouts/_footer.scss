@@ -56,7 +56,7 @@
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.4em;
-  color: $primery-text-color;
+  color: var(--primery-text-color);
   text-transform: uppercase;
   @media screen and (min-width: 1200px) {
     font-style: normal;
@@ -95,15 +95,15 @@
   align-items: center;
   width: 34px;
   height: 34px;
-  background-color: $primery-accent-color;
+  background-color: var(--primery-accent-color);
   color: #84A178;
   border-radius: 50%;
   transition: color $main-animation;
   &:hover {
-    color: $primery-text-color;
+    color: var(--primery-text-color);
   }
   &:focus {
-    color: $primery-text-color;
+    color: var(--primery-text-color);
     width: 35px;
   }
 }
@@ -128,7 +128,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.86;
-    color: $primery-title-color;
+    color: var(--primery-title-color);
     @media screen and (max-width: 1199.98px) {
       font-size: 14px;
     }
@@ -142,7 +142,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.86;
-    color: $primery-text-color;
+    color: var(--primery-text-color);
     @media screen and (max-width: 1199.98px) {
       font-size: 14px;
     }
