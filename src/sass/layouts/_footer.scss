@@ -98,7 +98,7 @@
   background-color: var(--primery-accent-color);
   color: #84A178;
   border-radius: 50%;
-  transition: color $main-animation;
+  transition: color var(--main-animation);
   &:hover {
     color: var(--primery-text-color);
   }
