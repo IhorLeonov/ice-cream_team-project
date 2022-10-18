@@ -61,6 +61,8 @@
         name="name"
         autocomplete="on"
         placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space"
       />
     </label>
 
@@ -71,6 +73,8 @@
         name="tel"
         autocomplete="on"
         placeholder="Phone"
+        pattern="^([+]\d{2})?-\d{3}-\d{7}$"
+        title="Please enter your pnone number in +11-111-1111111 format"
       />
     </label>
 
@@ -81,6 +85,9 @@
         id="comment"
         rows="3"
         placeholder="Comment"
+        minlength="10"
+        maxlength="200"
+        title="The comment should be at least 10 and no more than 200 characters"
       ></textarea>
     </label>
     <button class="modal-submit_button" type="submit">Submit</button>
@@ -143,6 +150,8 @@
         name="name"
         autocomplete="on"
         placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space"
       />
     </label>
 
@@ -153,6 +162,8 @@
         name="tel"
         autocomplete="on"
         placeholder="Phone"
+        pattern="^([+]\d{2})?-\d{3}-\d{7}$"
+        title="Please enter your pnone number in +11-111-1111111 format"
       />
     </label>
 
@@ -163,6 +174,9 @@
         id="comment"
         rows="3"
         placeholder="Comment"
+        minlength="10"
+        maxlength="200"
+        title="The comment should be at least 10 and no more than 200 characters"
       ></textarea>
     </label>
     <button class="modal-submit_button" type="submit">Submit</button>
@@ -255,6 +269,8 @@
         name="name"
         autocomplete="on"
         placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space"
       />
     </label>
 
@@ -265,6 +281,8 @@
         name="tel"
         autocomplete="on"
         placeholder="Phone"
+        pattern="^([+]\d{2})?-\d{3}-\d{7}$"
+        title="Please enter your pnone number in +11-111-1111111 format"
       />
     </label>
 
@@ -275,6 +293,8 @@
         name="email"
         autocomplete="on"
         placeholder="E-mail"
+        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+        title="Enter your email in the your-email@mail.com format"
       />
     </label>
 
@@ -285,6 +305,9 @@
         id="comment"
         rows="3"
         placeholder="Comment"
+        minlength="10"
+        maxlength="200"
+        title="The comment should be at least 10 and no more than 200 characters"
       ></textarea>
     </label>
     <button class="modal-submit_button" type="submit">Submit</button>
