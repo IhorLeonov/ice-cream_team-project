@@ -22,13 +22,13 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
-    color: var(--primery-text-color);
+    color: $primery-text-color;
     text-transform: uppercase;
     margin-bottom: 16px;
     @media screen and (min-width: 1200px) {
       font-style: normal;
       text-transform: uppercase;
-      color: var(--primery-text-color);
+      color: $primery-text-color;
       font-size: 30px;
       line-height: 1.2;
       font-weight: 400;
@@ -56,7 +56,7 @@
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.4em;
-  color: var(--primery-text-color);
+  color: $primery-text-color;
   text-transform: uppercase;
   @media screen and (min-width: 1200px) {
     font-style: normal;
@@ -95,7 +95,7 @@
   align-items: center;
   width: 32px;
   height: 32px;
-  background-color: var(--primery-accent-color);
+  background-color: $primery-accent-color;
   color: #84A178;
   border-radius: 50%;
   transition: color $main-animation;
@@ -127,7 +127,7 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
-    color: var(--primery-title-color);
+    color: $primery-title-color;
     @media screen and(min-width:768px) and (max-width: 1199px) {
       font-size: 14px;
     }
@@ -142,7 +142,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
-    color: var(--primery-text-color);
+    color: $primery-text-color;
     @media screen and(min-width:768px) and (max-width: 1199px) {
       font-size: 14px;
     }
