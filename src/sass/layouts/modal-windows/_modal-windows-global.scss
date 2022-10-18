@@ -64,6 +64,7 @@
   font-family: 'Seymour One';
   font-size: 16px;
   line-height: calc(24 / 16);
+  color: #131313;
 
   @media screen and(min-width: 768px) {
     margin-bottom: 32px;
@@ -92,15 +93,20 @@
   margin-bottom: 0;
 }
 
-// необовязкова фігня
-.buttons {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.modal-close {
+  background-color: #fff;
+  border: none;
 }
 
-.open-modal {
-  width: 200px;
-  height: 50px;
-}
+// необовязкова фігня
+// .buttons {
+//   padding: 15px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 15px;
+// }
+
+// .open-modal {
+//   width: 200px;
+//   height: 50px;
+// }
