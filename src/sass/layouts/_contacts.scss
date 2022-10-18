@@ -1,12 +1,18 @@
 .section-contacts {
   background-color: #84a178;
-  // position: relative;
 }
 
-// .contacts {
-//     position: absolute;
-//     bottom: 34px;
-// }
+.contacts {
+  transform: translateY(-335px);
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(-304px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: translateY(-96px);
+  }
+}
 
 .contacts__item {
   padding: 40px 32px;
@@ -52,6 +58,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
+}
+
+.contacts__category--big {
+  width: 130px;
 }
 
 .contacts__representation {
@@ -203,64 +213,12 @@
 
 .address-short {
   width: 150px;
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
-// .btn_location {
-//   display: block;
-//   width: 196px;
-//   height: 42px;
-//   border-radius: 10px;
-//   cursor: pointer;
-//   padding: 0;
-//   background-color: #f8d24e;
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: 1.29;
-//   color: #131313;
-//   border: none;
-
-//   &:hover {
-//     background-color: #0a8817;
-//   }
-
-//   &:focus {
-//     background-color: #0a8817;
-//     color: #fcfcfc;
-//   }
-
-//   &:disabled {
-//     background-color: #ababab;
-//   }
-
-//   @media screen and (max-width: 767px) {
-//     margin-bottom: 16px;
-//   }
-// }
-
-// .btn_franchise {
-//   display: block;
-//   width: 196px;
-//   height: 42px;
-//   border-radius: 10px;
-//   cursor: pointer;
-//   padding: 0;
-//   color: #131313;
-//   background-color: #84a178;
-//   border: 2px solid #f8d24e;
-
-//   &:hover {
-//     border: 2px solid #0a8817;
-//   }
-
-//   &:focus {
-//     border: 2px solid #0a8817;
-//     color: #fcfcfc;
-//   }
-
-//   &:disabled {
-//     border: 2px solid #ababab;
-//   }
-// }
 
 @media screen and (min-width: 768px) {
   .contacts_buttons {
