@@ -6,7 +6,7 @@
 
   background-color: #ffffff;
 
-// Mobile
+  // Mobile
   @media screen and (max-width: 480px) {
     max-width: 480px;
     background-size: contain;
@@ -39,7 +39,7 @@
   @media screen and (min-width: 769px) {
     display: flex;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1600px;
     background-image: url('../images/bg/bg.sec.2_@1x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -315,7 +315,7 @@
     min-height: 535px;
   }
 
-// Заголовок картки
+  // Заголовок картки
   &__title {
     margin-bottom: 40px;
 
