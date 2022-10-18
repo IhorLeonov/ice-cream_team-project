@@ -1,17 +1,18 @@
 // Footer//
 .footer {
     background-color:  #84A178;
-    &__container {
-        @media screen and(min-width:768px) {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-      }
+}
+.footer__main {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 // Text //
 .footer-banner {
   margin-bottom: 40px;
+  padding-inline-start: 0;
   @media screen and (max-width: 1199px) {
     width: 234px;
     margin-bottom: 40px;
