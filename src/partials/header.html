@@ -35,7 +35,12 @@
       </ul>
     </nav>
 
-    <button class="header__burger-menu">
+    <button
+      class="header__mobile-btn-menu js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="header__mobile-menu-icon" width="32" height="32">
         <use href="./images/svg/icons.svg#menu-icon"></use>
       </svg>
@@ -48,6 +53,57 @@
     >
       Buy Now
       <svg class="header__btn-icon" width="12" height="12px">
+        <use href="./images/svg/icons.svg#btn-arrow"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- mobile-menu -->
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <a class="header__mobile-logo" href="./index.html">
+      <img
+        class="mobile__logo-img img"
+        srcset="
+          ./images/header/logo.mobile_@1x.png 41w,
+          ./images/header/logo.tablet_@1x.png 48w,
+          ./images/header/logo.mobile_@2x.png 81w,
+          ./images/header/logo.tablet_@2x.png 96w
+        "
+        sizes="(min-width: 768px) 48px, (min-width: 480px) 41px, (max-width: 479.5px) 41px,
+                100vw"
+        src="./images/header/logo.mobile_@1x.png"
+        alt="header-logo"
+      />
+    </a>
+    <button class="menu-toggle js-close-menu">
+      <svg class="mobile__icon" width="32" height="32">
+        <use href="./images/svg/icons.svg#close-icon"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile__list list">
+      <li class="mobile__item">
+        <a href="./index.html" class="mobile-link link">Home</a>
+      </li>
+      <li class="mobile__item">
+        <a href="#about" class="mobile-link link">How it’s made?</a>
+      </li>
+      <li class="mobile__item">
+        <a href="#products" class="mobile-link link">Our products</a>
+      </li>
+      <li class="mobile__item">
+        <a href="#contacts" class="mobile-link link js-close-menu">Contact</a>
+      </li>
+    </ul>
+
+    <button
+      type="button"
+      data-modal="buy-now"
+      class="mobile__btn btn open-modal js-open-modal"
+    >
+      Buy Now
+      <svg class="mobile__btn-icon" width="12" height="12px">
         <use href="./images/svg/icons.svg#btn-arrow"></use>
       </svg>
     </button>
