@@ -1,0 +1,230 @@
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #84A178;
+    // background-image: url(/src/images/header/points.desc_@2x.png);
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        height: 338px;
+    }
+    @media screen and (max-width: 767px)
+    {
+        height: 448px;
+    }
+}
+.hero__container {
+    position: relative;
+}
+.thumb {
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    position: absolute;
+    left: 90%;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.thumb__numbers {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: var(--primery-title-color);
+
+    @media screen and (min-width: 1200px){
+        font-size: 46px;
+        line-height: 56px;
+    }
+
+}
+.thumb__numbers:not(:first-child){
+    @media screen and (min-width: 767px){
+        margin-top: 30px;
+    }
+    @media screen and (min-width: 1199px) {
+        margin-top: 37px;
+    }
+    }
+    
+.thumb__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    
+    margin-top: 4px;
+    color: var(--primery-text-color);
+    
+    @media screen and (min-width: 1200px) {
+        // padding-right: 15px;
+        font-size: 14px;
+        line-height: 1.28;
+    }
+}
+
+.hero__wrap {
+    flex-direction: column;
+    display: flex;
+    @media screen and (max-width: 767px) {
+        margin-left: 20px;
+        margin-top: 61px;
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-left: 32px;
+        margin-top: 40px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 17px;
+        margin-top: 41px;
+       
+    }
+}
+
+.hero__title {
+    width: 247px;
+    font-family: Seymour One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: var(--primery-text-color);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 162px;
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 367px;
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 48px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+}
+
+
+.wrap-hero-buttons{
+    margin-top: 32px;
+    margin-left: 20px;
+
+    display: flex;
+    align-items: center;
+    
+    @media screen and (max-width: 1199px) {
+        gap: 8px;
+    }
+    @media screen and  (min-width: 1200px){
+        gap: 34px;
+    }
+}
+.product-button{
+    cursor: pointer;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+    background-color:#84a178;
+    width: 62px;
+    height: 24px;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+
+    text-align: center;
+    color: var(--primery-title-color);
+}
+
+.made-button {
+    cursor: pointer;
+    border: none;
+    background-color:#84a178;
+
+    width: 83px;
+    height: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    text-decoration-line: underline;
+    
+    color: var(--primery-accent-color);
+    
+}
+.ice-cream__description{
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 13px;
+    margin-left: 32px;
+    gap: 33px;
+}
+.ice-cream{
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 151px;
+    height: 85px;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
+    color: #fff;
+}
+
+.ice-cream__main{
+    @media screen and (max-width: 767px){
+        width: 157px;
+        height: 207px;
+        margin-top: 32px;
+
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 257px;
+        height: 325px;
+        margin-top: 6px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 4px;
+        width: 447px;
+        height: 561px;
+
+    }
+    
+}
+.hero-favicon{
+    fill: #FCFCFC;
+}
+
