@@ -7,7 +7,6 @@
 @import './utils/visually-hidden';
 @import './utils/placeholders';
 @import './utils/mixins';
-@import './utils/btn';
 
 // base styles
 @import './base/reset';
@@ -27,3 +26,4 @@
 @import './layouts/modals';
 
 // components styles
+@import './components/btn';
