@@ -84,11 +84,6 @@
       transform: translateY(25.88px);
     }
   }
-  &__inline {
-    @media screen and (min-width: 768px) {
-      text-align: start;
-    }
-  }
   &__uppertext {
     margin-bottom: 4px;
     font-weight: 400;

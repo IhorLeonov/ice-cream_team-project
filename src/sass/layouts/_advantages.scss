@@ -42,7 +42,7 @@
   &__circle {
     display: block;
     position: relative;
-    background: #F8D24E;
+    background: var(--primery-title-color);
     border-radius: 25px;
     width: 50px;
     height: 50px;
