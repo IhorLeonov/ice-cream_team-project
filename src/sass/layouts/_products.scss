@@ -396,7 +396,8 @@
 
   &:hover,
   &:focus {
-    .arrow--default {
+    .arrow--default,
+    .arrow--focus {
       opacity: 0;
     }
   }
@@ -405,11 +406,17 @@
     .arrow--hover {
       opacity: 1;
     }
+    .arrow--focus {
+      opacity: 0;
+    }
   }
 
   &:focus {
     .arrow--focus {
       opacity: 1;
+    }
+    .arrow--hover {
+      opacity: 0;
     }
   }
 
