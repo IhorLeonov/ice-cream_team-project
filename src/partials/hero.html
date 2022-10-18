@@ -1,5 +1,5 @@
-<section class="hero">
-  <div class="hero__container">
+<section class="hero ">
+  <div class="hero__container container">
     <div class="thumb">
       <span class="thumb__numbers">16</span>
       <p class="thumb__text">cafes</p>
@@ -16,28 +16,38 @@
       <button type="button" href="./index.html" class="made-button">How it`s made?</a>
     </div>
     <div class="ice-cream__description">
-      <picture>
+      <div>
+        <picture>
+          <source media="(min-width:1200px)" srcset="/project_group/ice-cream.header.desc_@1x.png, 1x /project_group/ice-cream.header.desc_@2x.png">
+          <source media="(min-width:1200px)" srcset="/project_group/ice-cream.header.tablet_@1x.png, 1x /project_group/ice-cream.header.tablet_@2x.png">
+          <source media="(min-width:1200px)" srcset="/project_group/ice-cream.header.mobile_@1x.png, 1x /project_group/ice-cream.header.mobile_@2x.png">
         <img width="225px" height="225px"
           class="ice-cream"
-          src="/src/images/header/ice-cream.header.desc_@2x.png"
+          src="/src/images/header/ice-cream.header.desc_@1x.png"
+          alt="ice-cream on the plate"
         />
       </picture>
-      <div>
-        <p class="description">
+    </div>
+      <div class="description">
+        <p class="description__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et
       </p>
-      <button type="button" class="hero-favicon">
+      <!-- <button type="button" class="hero-favicon">
         <svg class="hero-favicon__arrow">
           <use ></use>
         </svg>
-      </button>
+      </button> -->
     </div>
-    </div>
+  </div>
     <div>
       <picture>
+        <source media="(min-width:1200px)" srcset="/project_group/rojok.header.desc_@1x.png, 1x /project_group/rojok.header.desc_@2x.png">
+        <source media="(min-width:1200px)" srcset="/project_group/rojok.header.tablet_@1x.png, 1x /project_group/rojok.header.tablet_@2x.png">
+        <source media="(min-width:1200px)" srcset="/project_group/rojok.header.mobile_@1x.png, 1x /project_group/rojok.header.mobile_@2x.png">
         <img 
           class="ice-cream__main"
           src="/src/images/header/rojok.header.desc_@1x.png"
+          alt="ice-cream cone"
         />
       </picture>
     </div>
