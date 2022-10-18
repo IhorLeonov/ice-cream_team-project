@@ -21,7 +21,17 @@
         value="ice-cream"
       />
       <div class="buy-now_thumb icecream_thumb">
-        <div class="image_underlay icecream_underlay"></div>
+        <div class="image_underlay icecream_underlay">
+          <img
+            srcset="
+              ./images/modal/buy-now-modal/image-1/buy-now-1@1x.png,
+              ./images/modal/buy-now-modal/image-1/buy-now-1@2x.png 2x
+            "
+            src="./images/modal/buy-now-modal/image-1/buy-now-1@1x.png"
+            alt="Ice Cream"
+            class="buy-now_modal-image"
+          />
+        </div>
         <p class="thumb-title">Ice Cream</p>
       </div>
     </label>
@@ -34,7 +44,17 @@
         value="ice-coffee"
       />
       <div class="buy-now_thumb icecoffee_thumb">
-        <div class="image_underlay icecoffee_underlay"></div>
+        <div class="image_underlay icecoffee_underlay">
+          <img
+            srcset="
+              ./images/modal/buy-now-modal/image-2/buy-now-2@1x.png,
+              ./images/modal/buy-now-modal/image-2/buy-now-2@2x.png 2x
+            "
+            src="./images/modal/buy-now-modal/image-2/buy-now-2@1x.png"
+            alt="Ice Coffee"
+            class="buy-now_modal-image"
+          />
+        </div>
         <p class="thumb-title">Ice Coffee</p>
       </div>
     </label>
@@ -47,7 +67,17 @@
         value="milkshake"
       />
       <div class="buy-now_thumb milkshake_thumb">
-        <div class="image_underlay milkshake_underlay"></div>
+        <div class="image_underlay milkshake_underlay">
+          <img
+            srcset="
+              ./images/modal/buy-now-modal/image-3/buy-now-3@1x.png,
+              ./images/modal/buy-now-modal/image-3/buy-now-3@2x.png 2x
+            "
+            src="./images/modal/buy-now-modal/image-3/buy-now-3@1x.png"
+            alt="Milkshake"
+            class="buy-now_modal-image"
+          />
+        </div>
         <p class="thumb-title">Milkshake</p>
       </div>
     </label>
@@ -103,7 +133,17 @@
     </svg>
   </button>
   <h3 class="modal_title buy-now-ingredients_title">Chocolate icecream</h3>
-  <div class="buy-now-ingredients_image-underlay"></div>
+  <div class="buy-now-ingredients_image-underlay">
+    <img
+      srcset="
+        ./images/modal/ingredients-modal/ingredients-image@1x.png,
+        ./images/modal/ingredients-modal/ingredients-image@2x.png 2x
+      "
+      src="./images/modal/ingredients-modal/ingredients-image@1x.png"
+      alt="Chocolate Ice Cream"
+      class="ingedients_modal-image"
+    />
+  </div>
   <ul class="buy-now-ingredients_list">
     <li class="buy-now-ingredients_item">
       <div class="nutrients_underlay">320</div>
@@ -212,14 +252,29 @@
     </svg>
   </button>
   <h3 class="modal_title location-title">Our Locations</h3>
+  <picture class="location-image">
+    <source
+      media="(max-width: 480px)"
+      srcset="
+        ./images/modal/location-modal/map-mobile_224.jpg 1x,
+        ./images/modal/location-modal/map-mobile_448.jpg 2x
+      "
+    />
+    <source
+      media="(min-width: 481px)"
+      srcset="
+        ./images/modal/location-modal/map-desktop_448.jpg 1x,
+        ./images/modal/location-modal/map-desktop_896.jpg 2x
+      "
+    />
+    <img src="./images/modal/location-modal/map-desktop_896.jpg" alt="Map">
+  </picture>
   <!-- <img
-        class="location-image"
-        src="images/modal/map.mobile_@1x.jpg"
-        alt="Map"
-        width="224px"
-        height="199px"
-      /> -->
-  <a class="open-map_link" href="https://goo.gl/maps/gjFAeG6t4nSM62w7A"
+    class="location-image"
+    src="./images/modal/location-modal/map-desktop_448.jpg"
+    alt="Map"
+  /> -->
+  <a class="open-map_link" href="https://goo.gl/maps/gjFAeG6t4nSM62w7A" target="_blank" rel="norefferer noopener"
     >Open Map</a
   >
 </div>
