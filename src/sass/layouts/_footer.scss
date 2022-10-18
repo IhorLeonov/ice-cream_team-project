@@ -1,13 +1,6 @@
 // Footer//
 .footer {
     background-color:  #84A178;
-    padding-top: 39px;
-    @media screen and (min-width: 768px) {
-        padding-top: 50px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-top: 120px;
-    }
     &__container {
         @media screen and(min-width:768px) {
           display: flex;
@@ -24,7 +17,7 @@
     margin-bottom: 40px;
   }
   &__paragraf {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -33,6 +26,9 @@
     text-transform: uppercase;
     margin-bottom: 16px;
     @media screen and (min-width: 1200px) {
+      font-style: normal;
+      text-transform: uppercase;
+      color: var(--primery-text-color);
       font-size: 30px;
       line-height: 1.2;
       font-weight: 400;
@@ -43,7 +39,13 @@
       font-size: 26px;
       line-height: 1.22;
       letter-spacing: 0.4em;
+      font-style: normal;
       margin-bottom: 9px;
+      width: 352px;
+      height: 57px;
+      font-weight: 700;
+      text-transform: uppercase;
+
     }
 }
 }
@@ -57,14 +59,20 @@
   color: var(--primery-text-color);
   text-transform: uppercase;
   @media screen and (min-width: 1200px) {
+    font-style: normal;
+    font-weight: 700;
     font-size: 58px;
     line-height: 1.22;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
      }
      @media screen and (min-width: 768px) and (max-width: 1199.98px) {
       font-size: 48px;
       line-height: 1.22;
       letter-spacing: 0.06em;
+      width: 340px;
+      font-style: normal;
+      font-weight: 700;
      }
 }
 // Socials //
@@ -90,12 +98,12 @@
   background-color: var(--primery-accent-color);
   color: #84A178;
   border-radius: 50%;
-  transition: color var(--main-animation);
+  transition: color $main-animation;
   &:hover {
-    color: var(--primery-text-color);
+    color: $primery-text-color;
   }
   &:focus {
-    color: var(--primery-text-color);
+    color: $primery-text-color;
     width: 35px;
   }
 }
