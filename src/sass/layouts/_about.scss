@@ -134,4 +134,39 @@
       display: none;
     }
   }
+  &__button {
+    display: block;
+    width: 164px;
+    height: 42px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--primery-title-color);
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0;
+
+    background-color: var(--primery-accent-color);
+
+    &:hover {
+      background-color: #0a8817;
+    }
+
+    &:focus {
+      background-color: #0a8817;
+      color: #fcfcfc;
+    }
+    &:focus .about__icon {
+      fill: white;
+    }
+
+    &:disabled {
+      background-color: #ababab;
+    }
+  }
 }
