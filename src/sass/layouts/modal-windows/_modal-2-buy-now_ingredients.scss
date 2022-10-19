@@ -1,0 +1,133 @@
+.buy-now-ingredients_modal {
+  padding: 32px 20px;
+  max-height: 100%;
+  overflow-y: scroll;
+
+  @media screen and(min-width: 481px) {
+    padding: 32px 40px;
+  }
+}
+
+.buy-now-ingredients_title {
+  margin-bottom: 30px;
+}
+
+.buy-now-ingredients_image-underlay {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px; 
+
+  width: 132px;
+  height: 132px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.ingedients_modal-image {
+  position: absolute;
+  top: -7px;
+  border-radius: 50%;
+}
+
+.buy-now-ingredients_list {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+
+  @media screen and(min-width: 481px) {
+    margin-bottom: 24px;
+    gap: 20px;
+  }
+}
+
+.buy-now-ingredients_item {
+  position: relative;
+
+  display: flex;
+  width: calc((100% - 27px) / 4);
+  height: 72px;
+
+  padding: 8px;
+
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+
+  align-items: flex-end;
+  justify-content: center;
+
+  @media screen and(min-width: 481px) {
+    width: 65px;
+    height: 90px;
+  }
+}
+
+.nutrients_underlay {
+  position: absolute;
+  display: flex;
+  top: -2px;
+  width: 43px;
+  height: 43px;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(28 / 10);
+  color: #131313;
+
+  border-radius: 50%;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  @media screen and (min-width: 481px) {
+    width: 53px;
+    height: 53px;
+
+    font-size: 12px;
+    line-height: calc(28 / 12);
+  }
+}
+
+.nutrients {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  color: #131313;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ingredients_small-title {
+  margin-bottom: 24px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  color: #131313;
+}
+
+.ingredients_list {
+  margin-bottom: 48px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(25 / 14);
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
+.ingredients_item {
+  display: flex;
+  justify-content: space-between;
+}

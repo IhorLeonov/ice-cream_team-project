@@ -3,6 +3,8 @@
   opacity: 0;
   visibility: hidden;
 
+  // pointer-events: none;
+
   overflow-y: scroll;
 
   /*  Установаем ширину окна  */
@@ -64,6 +66,7 @@
   font-family: 'Seymour One';
   font-size: 16px;
   line-height: calc(24 / 16);
+  color: #131313;
 
   @media screen and(min-width: 768px) {
     margin-bottom: 32px;
@@ -76,6 +79,8 @@
 .overlay {
   opacity: 0;
   visibility: hidden;
+
+  // pointer-events: none;
 
   position: fixed;
   top: 0;
@@ -92,15 +97,51 @@
   margin-bottom: 0;
 }
 
-// необовязкова фігня
-.buttons {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.modal-close {
+  background-color: #fff;
+  border: none;
 }
 
-.open-modal {
-  width: 200px;
-  height: 50px;
+.modal-submit_button {
+  margin-top: 24px;
+  width: 114px;
+  height: 42px;
+
+  background-color: #f8d24e;
+  border: none;
+  border-radius: 10px;
+
+  color: #131313;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  @media screen and(min-width:481px) {
+    margin-top: 32px;
+    
+    width: 121px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
+
+.icon-close-modal {
+  @media screen and(max-width: 480px) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+// необовязкова фігня
+// .buttons {
+//   padding: 15px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 15px;
+// }
+
+// .open-modal {
+//   width: 200px;
+//   height: 50px;
+// }

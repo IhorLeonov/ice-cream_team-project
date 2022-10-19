@@ -1,0 +1,19 @@
+.franchise_modal {
+  @media screen and(max-width: 480px) {
+    // height: auto;
+    overflow-y: scroll;
+  }
+
+  @media screen and(min-width: 481px) {
+    padding: 32px 60px;
+  }
+}
+
+.franchise_text {
+  margin-bottom: 24px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: #131313;
+}

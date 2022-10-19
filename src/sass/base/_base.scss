@@ -1,8 +1,13 @@
 body {
-  background-color: #84a178;
+  background-color: var(--main-bg-color);
   font-family: 'Montserrat';
   font-style: normal;
   color: #fcfcfc;
+}
+
+a,
+button {
+  cursor: url('../images/cursor.png'), default;
 }
 
 img {
