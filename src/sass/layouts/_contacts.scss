@@ -43,6 +43,14 @@
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: #131313;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts__category {
@@ -57,11 +65,18 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+    width: 73px;
+    height: 28px;
+    border-radius: 6px;
   }
 }
 
 .contacts__category--big {
   width: 130px;
+
+  @media screen and (min-width: 768px) {
+    width: 138px;
+  }
 }
 
 .contacts__representation {
@@ -71,6 +86,10 @@
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .contacts__city {
@@ -89,6 +108,14 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-timetable__day {
@@ -98,6 +125,14 @@
   font-size: 12px;
   line-height: 1.86;
   color: #131313;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-timetable__time {
@@ -106,6 +141,14 @@
   font-size: 12px;
   line-height: 1.86;
   color: #ababab;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-timetable__time-week {
@@ -154,6 +197,14 @@
   font-size: 12px;
   line-height: 1.5;
   color: #131313;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-info__mail {
@@ -164,6 +215,14 @@
   font-size: 12px;
   line-height: 1.5;
   color: #131313;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -210,15 +269,6 @@
     margin-left: auto;
   }
 }
-
-.address-short {
-  width: 150px;
-
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
-}
-
 
 @media screen and (min-width: 768px) {
   .contacts_buttons {
