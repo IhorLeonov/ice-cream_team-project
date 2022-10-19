@@ -7,7 +7,7 @@
   background-color: #ffffff;
 
   // Mobile
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $mobile) {
     max-width: 480px;
     background-size: contain;
     background-position: top;
@@ -55,19 +55,19 @@
     font-family: 'Montserrat';
     font-weight: 800;
     font-size: 18px;
-    line-height: calc(22px / 18px);
+    line-height: decimal-round(calc(22px / 18px));
     text-transform: uppercase;
 
     color: #131313;
 
     @media screen and (min-width: $tablet) {
       font-size: 22px;
-      line-height: calc(27px / 22px);
+      line-height: decimal-round(calc(27px / 22px));
     }
 
     @media screen and (min-width: $desktop) {
       font-size: 30px;
-      line-height: calc(37px / 30px);
+      line-height: decimal-round(calc(37px / 30px));
       letter-spacing: 0.04em;
     }
   }
@@ -76,10 +76,9 @@
   &__title {
     margin-bottom: 148px;
 
-    font-family: 'Seymour One';
-    font-weight: 400;
+    font-family: var(--primery-title-font);
     font-size: 30px;
-    line-height: calc(38px / 30px);
+    line-height: decimal-round(calc(38px / 30px));
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -91,7 +90,7 @@
       margin-bottom: 140px;
 
       font-size: 34px;
-      line-height: calc(43px / 34px);
+      line-height: decimal-round(calc(43px / 34px));
     }
 
     // Desctop
@@ -99,7 +98,7 @@
       margin-bottom: 300px;
 
       font-size: 36px;
-      line-height: calc(45px / 36px);
+      line-height: decimal-round(calc(45px / 36px));
       letter-spacing: 0.06em;
     }
   }
@@ -294,7 +293,7 @@
   border-radius: 24px;
 
   @media screen and (max-width: 767px) {
-    max-width: 480px;
+    max-width: 320px;
 
     &:not(:last-child) {
       margin-bottom: 164px;
@@ -322,7 +321,7 @@
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(24px / 20px);
+    line-height: decimal-round(calc(24px / 20px));
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
@@ -330,23 +329,22 @@
 
     @media screen and (min-width: $tablet) {
       font-size: 22px;
-      line-height: calc(27px / 22px);
+      line-height: decimal-round(calc(27px / 22px));
     }
     @media screen and (min-width: $desktop) {
       margin-bottom: 65px;
 
       font-size: 30px;
-      line-height: calc(37px / 30px);
+      line-height: decimal-round(calc(37px / 30px));
     }
   }
   &__text {
     margin-bottom: 110px;
 
     font-family: 'Montserrat';
-    font-weight: 400;
+
     font-size: 14px;
-    line-height: calc(25px / 14px);
-    /* or 25px */
+    line-height: decimal-round(calc(25px / 14px));
     letter-spacing: 0.04em;
 
     color: #131313;
