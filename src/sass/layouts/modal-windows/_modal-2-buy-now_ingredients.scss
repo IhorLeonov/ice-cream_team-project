@@ -82,7 +82,7 @@
   font-weight: 500;
   font-size: 10px;
   line-height: calc(28 / 10);
-  color: #131313;
+  color: var(--primery-title-color);
 
   border-radius: 50%;
   background: #9cbe8f;
@@ -103,7 +103,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: calc(12 / 10);
-  color: #131313;
+  color: var(--primery-title-color);
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -114,7 +114,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: calc(28 / 20);
-  color: #131313;
+  color: var(--primery-title-color);
 }
 
 .ingredients_list {
@@ -124,7 +124,7 @@
   font-size: 14px;
   line-height: calc(25 / 14);
   letter-spacing: 0.04em;
-  color: #131313;
+  color: var(--primery-title-color);
 }
 
 .ingredients_item {

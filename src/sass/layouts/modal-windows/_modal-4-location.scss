@@ -24,9 +24,9 @@
   line-height: calc(15 / 12);
   text-decoration: none;
 
-  color: #131313;
+  color: var(--primery-title-color);
 
-  background-color: #f8d24e;
+  background-color: var(--primery-bg-color);
   border-radius: 10px;
 
   @media screen and(min-width: 481px) {
