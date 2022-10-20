@@ -1,0 +1,2 @@
+$('a[href*="#contacts"]').on("click",(function(){return $("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top},1e3),!1})),$('a[href*="#products"]').on("click",(function(){return $("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top},1e3),!1})),$('a[href*="#about"]').on("click",(function(){return $("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top},1e3),!1}));
+//# sourceMappingURL=index.37c29703.js.map
