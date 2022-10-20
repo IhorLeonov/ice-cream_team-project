@@ -1,7 +1,6 @@
 .location_modal {
-  height: auto;
-
-  @media screen and(min-width: 481px) {
+  text-align: center;
+  @media screen and(min-width: 768px) {
     padding: 32px 60px;
   }
 }
@@ -11,26 +10,40 @@
   border-radius: 10px;
   margin-bottom: 24px;
 
-  @media screen and(min-width: 481px) {
+  @media screen and(min-width: 768px) {
     margin-bottom: 32px;
   }
 }
 
 .open-map_link {
+  display: inline-block;
   padding: 12px 34px;
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
-  line-height: calc(15 / 12);
+  line-height: decimal-round(calc(15 / 12));
   text-decoration: none;
 
   color: var(--primery-title-color);
 
-  background-color: var(--primery-bg-color);
+  background-color: var(--primery-accent-color);
   border-radius: 10px;
 
-  @media screen and(min-width: 481px) {
+  &:hover {
+    background-color: var(--primery-hover-color);
+  }
+
+  &:focus {
+    background-color: var(--primery-hover-color);
+    color: var(--primery-text-color);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: var(--primery-disabled-color);
+  }
+
+  @media screen and(min-width: 768px) {
     font-size: 14px;
-    line-height: calc(17 / 14);
+    line-height: decimal-round(calc(17 / 14));
   }
 }
