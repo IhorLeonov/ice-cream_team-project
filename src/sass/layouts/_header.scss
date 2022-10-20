@@ -40,7 +40,7 @@
   padding-bottom: 14px;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(20 / 16);
+  line-height: decimal-round(calc(20 / 16));
   display: flex;
   align-items: center;
   color: var(--primery-text-color);
@@ -131,7 +131,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,7 +183,7 @@
 .mobile-link {
   font-weight: 700;
   font-size: 32px;
-  line-height: calc(39 / 32);
+  line-height: decimal-round(calc(39 / 32));
   color: #fcfcfc;
 
   &:hover,
