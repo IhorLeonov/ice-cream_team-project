@@ -69,11 +69,24 @@
   background-repeat: no-repeat;
   background-size: contain;
 
+  // Mobile
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    transform: translate(-20px, 0px);
+    background-image: url('../images/header/points.mobile_@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/points.mobile_@2x.png');
+    }
+  }
+
   // tablet
   @media screen and (min-width: 768px) {
     max-width: 767px;
     max-height: 67px;
-    transform: translate(0px, 285px);
+    transform: translate(-25px, 285px);
     background-image: url('../images/header/points.tablet_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
