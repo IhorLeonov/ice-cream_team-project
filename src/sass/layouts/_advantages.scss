@@ -1,10 +1,14 @@
 .advantages {
-  background-color: #84A178;
-  color: #fcfcfc;
   text-align: center;
 
   &.section {
     padding-top: 0px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 204px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 180px;
+    }
   }
   &__point {
     font-family: 'Roboto', sans-serif;
@@ -19,7 +23,7 @@
       font-size: 48px;
       line-height: 1.23;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       font-size: 58px;
     }
   }
