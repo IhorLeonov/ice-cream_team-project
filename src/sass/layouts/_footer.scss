@@ -107,14 +107,19 @@
 
 .socials__item:not(:last-child) {
   margin-right: 28px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+  
 }
 
 .socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   background-color: var(--primery-accent-color);
   color: #84a178;
   border-radius: 50%;
@@ -126,6 +131,14 @@
   &:focus {
     color: var(--primery-text-color);
     width: 35px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 34px;
+    height: 34px;
   }
 }
 .socials__icon {
