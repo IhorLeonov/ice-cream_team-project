@@ -13,6 +13,7 @@
 
 .hero-container {
   display: flex;
+  justify-content: center;
 }
 
 .hero-container::before {
@@ -27,14 +28,15 @@
 
   // Mobile
   @media screen and (max-width: 767px) {
-    max-width: 480px;
-    transform: translate(-20px, 395px);
-    background-image: url('../images/header/points.mobile_@1x.png');
+    height: 50px;
+    width: 328px;
+    transform: translate(-5px, 418px);
+    background-image: url('../images/hero/points.mobile_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/header/points.mobile_@2x.png');
+      background-image: url('../images/hero/points.mobile_@2x.png');
     }
   }
 
@@ -43,12 +45,12 @@
     max-width: 767px;
     max-height: 67px;
     transform: translate(-25px, 285px);
-    background-image: url('../images/header/points.tablet_@1x.png');
+    background-image: url('../images/hero/points.tablet_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/header/points.tablet_@2x.png');
+      background-image: url('../images/hero/points.tablet_@2x.png');
     }
   }
 
@@ -57,12 +59,12 @@
     max-width: 1200px;
     max-height: 384px;
     transform: translate(-16px, 205px);
-    background-image: url('../images/header/points.desc_@1x.png');
+    background-image: url('../images/hero/points.desc_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/header/points.desc_@2x.png');
+      background-image: url('../images/hero/points.desc_@2x.png');
     }
   }
 }
@@ -362,8 +364,8 @@
 .hero__wrap::after {
   position: absolute;
   content: '';
-  width: 170px;
-  height: 219px;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
@@ -373,68 +375,40 @@
     width: 170px;
     height: 219px;
     z-index: 0;
-    transform: translate(0, 0px);
-    background-image: url('../images/header/rojok.header.mobile_@1x.png');
+    transform: translate(50, 20px);
+    background-image: url('../images/hero/rojok-mob_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/header/rojok.header.mobile_@2x.png');
+      background-image: url('../images/hero/rojok-mob_@2x.png');
+    }
+  }
+  // tablet
+  @media screen and (min-width: $tablet) {
+    max-width: 270px;
+    max-height: 343px;
+    transform: translate(190px, -143px);
+    background-image: url('../images/hero/rojok-tab_@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/rojok-tab_@2x.png');
+    }
+  }
+
+  // desctop
+  @media screen and (min-width: $desktop) {
+    max-width: 456px;
+    max-height: 561px;
+    transform: translate(400px, -225px);
+    background-image: url('../images/hero/rojok-des_@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero/rojok-des_@2x.png');
     }
   }
 }
-// // tablet
-// @media screen and (min-width: 768px) {
-//   max-width: 767px;
-//   max-height: 67px;
-//   transform: translate(-25px, 285px);
-//   background-image: url('../images/header/rojok.header.tablet_@1x.png');
-
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url('../images/header/rojok.header.tablet_@1x.png');
-//   }
-// }
-
-// // desctop
-// @media screen and (min-width: $desktop) {
-//   max-width: 1200px;
-//   max-height: 384px;
-//   transform: translate(-16px, 205px);
-//   background-image: url('../images/header/rojok.header.desctop_@1x.png');
-
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url('../images/header/rojok.header.desctop_@1x.png');
-//   }
-// }
-
-// .ice-cream__main {
-// @media screen and (max-width: 767px) {
-// z-index: 1;
-// width: 157px;
-// height: 208px;
-// position: absolute;
-// }
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
-// z-index: 1;
-// width: 257px;
-// height: 325px;
-// position: absolute;
-// right: 93px;
-// bottom: auto;
-// }
-// @media screen and (min-width: 1200px) {
-// z-index: 1;
-// width: 447px;
-// height: 561px;
-// position: absolute;
-// right: 102px;
-// bottom: auto;
-// }
-// }
-// .hero-favicon{
-// fill: #FCFCFC;
-//
