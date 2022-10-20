@@ -2,8 +2,9 @@
   background-color: #84a178;
 }
 
+// Content up
 .contacts {
-  transform: translateY(-335px);
+  transform: translateY(-345px);
 
   @media screen and (min-width: 768px) {
     transform: translateY(-304px);
@@ -11,6 +12,19 @@
 
   @media screen and (min-width: 1200px) {
     transform: translateY(-96px);
+  }
+}
+
+// Resize the section
+
+.section-contacts {
+  margin-bottom: -305px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: -264px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 26px;
   }
 }
 
@@ -36,20 +50,21 @@
 
 .contacts__city {
   margin-bottom: 8px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: decimal-round(calc (22/12));
   letter-spacing: 0.04em;
   color: #131313;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
+    line-height: decimal-round(calc (26/14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: decimal-round(calc (30/16));
   }
 }
 
@@ -80,15 +95,15 @@
 }
 
 .contacts__representation {
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: decimal-round(calc (22/12));
   letter-spacing: 0.04em;
   color: #131313;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
+    line-height: decimal-round(calc (30/16));
   }
 }
 
@@ -97,11 +112,10 @@
 }
 
 .contacts__address {
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.04em;
-  line-height: 1.83;
+  line-height: decimal-round(calc (22/12));
   color: #d6936d;
   margin-bottom: 24px;
 
@@ -111,43 +125,46 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
+    line-height: decimal-round(calc (26/14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: decimal-round(calc (29/16));
   }
 }
 
 .contacts-timetable__day {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: decimal-round(calc (22/12));
   color: #131313;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
+    line-height: decimal-round(calc (26/14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: decimal-round(calc (30/16));
   }
 }
 
 .contacts-timetable__time {
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: decimal-round(calc (22/12));
   color: #ababab;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
+    line-height: decimal-round(calc (26/14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: decimal-round(calc (30/16));
   }
 }
 
@@ -191,37 +208,37 @@
 }
 
 .contacts-info__tel {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: decimal-round(calc (18/12));
   color: #131313;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
+    line-height: decimal-round(calc (26/14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: decimal-round(calc (29/16));
   }
 }
 
 .contacts-info__mail {
   display: block;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: decimal-round(calc (18/12));
   color: #131313;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
+    line-height: decimal-round(calc (26/14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: decimal-round(calc (29/16));
   }
 }
 
