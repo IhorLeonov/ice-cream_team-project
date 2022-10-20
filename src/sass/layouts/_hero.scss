@@ -194,14 +194,20 @@
 // margin-bottom: 13px;
 // gap: 33px;
 // }
-// // .hero-desc {
-// // margin-top: 56px;
-// // }
+
 // .ice-cream {
 // @media screen and (max-width: 767px) {
 // display: none;
 // }
 // }
+
+.hero-desc {
+  margin-top: 214px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 368px;
+  }
+}
 
 .hero-desc__text {
   // display: flex;
