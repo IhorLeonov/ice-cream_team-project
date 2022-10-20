@@ -8,19 +8,49 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 65px;
   }
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+
+  // // Mobile
   // @media screen and (max-width: 767px) {
-  // background-image: url('../images/header/points.mobile_@2x.png');
-  // height: 448px;
+  //   background-size: contain;
+  //   background-position: bottom;
+  //   background-repeat: no-repeat;
+  //   background-image: url('../images/header/points.mobile_@1x.png');
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url('../images/header/points.mobile_@2x.png');
+  //   }
   // }
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  // height: 338px;
-  // background-image: url('../images/header/points.tablet_@2x.png');
+
+  // // tablet
+  // @media screen and (min-width: 768px) {
+  //   // max-width: $tablet;
+  //   background-size: contain;
+  //   background-position: bottom;
+  //   background-repeat: no-repeat;
+  //   background-image: url('../images/header/points.tablet_@1x.png');
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url('../images/header/points.tablet_@2x.png');
+  //   }
   // }
+
+  // // desctop
   // @media screen and (min-width: 1200px) {
-  // background-image: url('../images/header/points.desc_@2x.png');
+  //   // max-width: $tablet;
+  //   background-size: contain;
+  //   background-position: bottom;
+  //   background-repeat: no-repeat;
+  //   background-image: url('../images/header/points.desc_@1x.png');
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url('../images/header/points.desc_@2x.png');
+  //   }
   // }
 }
 
@@ -29,8 +59,6 @@
 }
 
 .hero__wrap {
-  // flex-direction: column;
-  // display: flex;
   @media screen and (max-width: 767px) {
     margin-top: 61px;
   }
@@ -190,22 +218,6 @@
   }
 }
 
-// .ice-cream__description {
-// @media screen and (max-width: 767px) {
-// display: none;
-// }
-// display: flex;
-// margin-top: 28px;
-// margin-bottom: 13px;
-// gap: 33px;
-// }
-
-// .ice-cream {
-// @media screen and (max-width: 767px) {
-// display: none;
-// }
-// }
-
 .hero-desc {
   margin-top: 214px;
 
@@ -216,9 +228,6 @@
 }
 
 .hero-desc__text {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   width: 151px;
   height: 85px;
 
@@ -296,10 +305,6 @@
   text-align: right;
   margin-left: auto;
   margin-top: 28px;
-  // position: absolute;
-  // left: 90%;
-  // display: flex;
-  // flex-direction: column;
 
   @media screen and (max-width: 767px) {
     display: none;
