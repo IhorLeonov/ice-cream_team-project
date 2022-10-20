@@ -1,34 +1,42 @@
 .buy-now-ingredients_modal {
   padding: 32px 20px;
-  max-height: 100%;
-  overflow-y: scroll;
 
-  @media screen and(min-width: 481px) {
+  @media screen and(min-width: 768px) {
     padding: 32px 40px;
   }
 }
 
 .buy-now-ingredients_title {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 
 .buy-now-ingredients_image-underlay {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px; 
+  margin-bottom: 24px;
 
   width: 132px;
   height: 132px;
 
   border-radius: 50%;
 
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
-  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
 }
 
 .ingedients_modal-image {
   position: absolute;
+  left: 0;
   top: -7px;
   border-radius: 50%;
 }
@@ -41,8 +49,8 @@
   justify-content: center;
   gap: 9px;
 
-  @media screen and(min-width: 481px) {
-    margin-bottom: 24px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 48px;
     gap: 20px;
   }
 }
@@ -62,7 +70,7 @@
   align-items: flex-end;
   justify-content: center;
 
-  @media screen and(min-width: 481px) {
+  @media screen and(min-width: 768px) {
     width: 65px;
     height: 90px;
   }
@@ -78,10 +86,9 @@
   align-items: center;
   justify-content: center;
 
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 10px;
-  line-height: calc(28 / 10);
+  line-height: decimal-round(calc(28 / 10));
   color: var(--primery-title-color);
 
   border-radius: 50%;
@@ -89,20 +96,18 @@
   border: 2px solid #9cbe8f;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     width: 53px;
     height: 53px;
 
     font-size: 12px;
-    line-height: calc(28 / 12);
+    line-height: decimal-round(calc(28 / 12));
   }
 }
 
 .nutrients {
-  font-family: 'Montserrat';
-  font-weight: 400;
   font-size: 10px;
-  line-height: calc(12 / 10);
+  line-height: decimal-round(calc(12 / 10));
   color: var(--primery-title-color);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -110,19 +115,15 @@
 
 .ingredients_small-title {
   margin-bottom: 24px;
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
-  line-height: calc(28 / 20);
+  line-height: decimal-round(calc(28 / 20));
   color: var(--primery-title-color);
 }
 
 .ingredients_list {
   margin-bottom: 48px;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(25 / 14);
+  line-height: decimal-round(calc(25 / 14));
   letter-spacing: 0.04em;
   color: var(--primery-title-color);
 }
