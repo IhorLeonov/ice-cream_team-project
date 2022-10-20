@@ -7,7 +7,8 @@
 
   /*  Установаем ширину окна  */
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 100%;
   max-width: 280px;
 
   padding: 28px;
@@ -41,6 +42,10 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.js-body.active {
+  overflow: hidden;
 }
 
 .modal-close {
