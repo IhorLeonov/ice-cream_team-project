@@ -49,7 +49,7 @@
   font-family: var(--primery-title-font);
   font-weight: 400;
   font-size: 26px;
-  line-height: 33px;
+  line-height: decimal-round(calc(33 / 26));
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -57,28 +57,27 @@
 
   &__box {
     font-size: 34px;
-    line-height: 33px;
   }
 
   @media screen and (min-width: 768px) {
     width: 200px;
     font-size: 18px;
-    line-height: 23px;
+    line-height: decimal-round(calc(23 / 18));
 
     &__box {
       font-size: 24px;
-      line-height: 13px;
+      line-height: decimal-round(calc(13 / 24));
     }
   }
 
   @media screen and (min-width: 1200px) {
     width: 400px;
     font-size: 38px;
-    line-height: 48px;
+    line-height: decimal-round(calc(48 / 38));
 
     &__box {
       font-size: 38px;
-      line-height: 48px;
+      line-height: decimal-round(calc(48 / 38));
     }
   }
 }
@@ -100,20 +99,19 @@
 }
 
 .hero-prod-btn {
-  // border: 2px solid #f8d24e;
-  // border-radius: 8px;
-  // background-color: #84a178;
   width: 62px;
   height: 24px;
 
   margin-right: 8px;
   font-weight: 600;
   font-size: 8px;
-  line-height: 10px;
+  line-height: decimal-round(calc(10 / 8));
 
-  // text-align: center;
-  // color: var(--primery-title-color);
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: decimal-round(calc(18 / 14));
+    width: 134px;
+    height: 42px;
     margin-right: 12px;
   }
 }
@@ -127,11 +125,18 @@
 
   font-weight: 600;
   font-size: 8px;
-  line-height: 10px;
+  line-height: decimal-round(calc(10 / 8));
   text-align: center;
   text-decoration-line: underline;
 
   color: var(--primery-accent-color);
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 154px;
+    height: 40px;
+    font-size: 14px;
+    line-height: decimal-round(calc(17 / 14));
+  }
 }
 
 .hero-pic-box {
@@ -219,7 +224,7 @@
 
   margin-bottom: 14px;
   font-size: 12px;
-  line-height: 17px;
+  line-height: decimal-round(calc(17 / 12));
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -229,7 +234,7 @@
     width: 200px;
     height: 80px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: decimal-round(calc(20 / 14));
     margin-bottom: 25px;
   }
 }
@@ -308,14 +313,14 @@
 .hero-thumb__numb {
   font-weight: 900;
   font-size: 28px;
-  line-height: 34px;
+  line-height: decimal-round(calc(34 / 28));
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primery-title-color);
 
   @media screen and (min-width: 1200px) {
     font-size: 46px;
-    line-height: 56px;
+    line-height: decimal-round(calc(56 / 46));
   }
 }
 
@@ -338,14 +343,14 @@
 
 .hero-thumb__text {
   font-size: 8px;
-  line-height: 10px;
+  line-height: decimal-round(calc(10 / 8));
 
   margin-top: 4px;
   // color: var(--primery-text-color);
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 17px;
+    line-height: decimal-round(calc(17 / 14));
   }
 }
 
