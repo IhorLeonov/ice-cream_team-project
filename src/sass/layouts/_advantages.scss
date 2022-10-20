@@ -3,10 +3,10 @@
 
   &.section {
     padding-top: 0px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       padding-bottom: 204px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       padding-bottom: 180px;
     }
   }
@@ -14,23 +14,24 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.17;
+    line-height: decimal-round(calc(42px / 36px));
     letter-spacing: 0.04em;
 
     margin-bottom: 18px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 16px;
       font-size: 48px;
-      line-height: 1.23;
+      line-height: decimal-round(calc(59px / 48px));
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 58px;
+      line-height: decimal-round(calc(71px / 58px));
     }
   }
   &__list {
     padding: 0;
     margin: 0;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       justify-content: space-around;
     }
@@ -41,7 +42,7 @@
     align-items: center;
     &:not(:last-child) {
       margin-bottom: 18px;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: $tablet) {
         margin-bottom: 0;
       }
     }
@@ -87,26 +88,26 @@
       animation-duration: 9s;
       animation-iteration-count: infinite;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 32px;
     }
   }
   &__text {
     font-weight: 700;
     font-size: 12px;
-    line-height: 1.7;
+    line-height: decimal-round(calc(20px / 12px));
 
     text-align: center;
     width: 230px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 14px;
-      line-height: 1.74;
+      line-height: decimal-round(calc(24px / 14px));
       font-weight: 400;
       width: 152px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 16px;
-      line-height: 1.76;
+      line-height: decimal-round(calc(28px / 16px));
       letter-spacing: 0.02em;
       width: 368px;
     }
