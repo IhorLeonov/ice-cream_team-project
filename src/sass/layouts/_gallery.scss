@@ -189,7 +189,7 @@
     opacity: 1;
   }
 
-  li.slick-active button:before {
+  & li.slick-active button:before {
     font-size: 12px;
     color: var(--main-bg-color);
     opacity: 1;
