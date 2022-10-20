@@ -63,17 +63,31 @@
   position: absolute;
   content: '';
   display: block;
-  max-width: 1200px;
-  max-height: 384px;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   background-repeat: no-repeat;
   background-size: contain;
-  transform: translate(-16px, 205px);
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    max-width: 767px;
+    max-height: 67px;
+    transform: translate(0px, 285px);
+    background-image: url('../images/header/points.tablet_@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/points.tablet_@2x.png');
+    }
+  }
 
   // Desctop
   @media screen and (min-width: $desktop) {
-    width: 100%;
-    height: 100%;
+    max-width: 1200px;
+    max-height: 384px;
+    transform: translate(-16px, 205px);
     background-image: url('../images/header/points.desc_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
