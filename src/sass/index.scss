@@ -13,6 +13,9 @@
 @import './base/base';
 @import './base/container';
 
+// components styles
+@import './components/btn';
+
 // layout styles
 @import './layouts/header';
 @import './layouts/hero';
@@ -24,6 +27,3 @@
 @import './layouts/customer-reviews';
 @import './layouts/footer';
 @import './layouts/modals';
-
-// components styles
-@import './components/btn';
