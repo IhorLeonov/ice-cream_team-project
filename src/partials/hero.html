@@ -1,55 +1,111 @@
-<section class="hero ">
+<section class="hero">
   <div class="hero__container container">
-    <div class="thumb">
-      <span class="thumb__numbers">16</span>
-      <p class="thumb__text">cafes</p>
-      <span class="thumb__numbers">23</span>
-      <p class="thumb__text">food trucks</p>
-    </div>
     <div class="hero__wrap">
-      <h1 class="hero__title">
-        ice cream made width passion </span>
+      <h1 class="hero-title">
+        ice cream made width <span class="hero-title__box">passion</span>
       </h1>
+      <div class="wrap-hero-btn">
+        <button
+          class="btn_transparent hero-prod-btn"
+          type="button"
+          href="#products"
+        >
+          Products
+        </button>
+        <button type="button" class="made-btn" href="#about">
+          How it`s made?
+        </button>
+      </div>
+      <div class="hero-pic-box"></div>
     </div>
-    <div class="wrap-hero-buttons">
-      <button type="button" href="#products" class="product-button">Products</a>
-      <button type="button" href="#about" class="made-button">How it`s made?</a>
-    </div>
-    <div class="ice-cream__description">
-      <div>
-        <picture>
-          <source media="(min-width:1200px)" srcset="./images/header/ice-cream.header.desc_@1x.png, ./images/header/ice-cream.header.desc_@2x.png">
-          <source media="(min-width:768px)" srcset="./images/header/ice-cream.header.tablet_@1x.png, ./images/header/ice-cream.header.tablet_@1x.png">
-          <!-- <source media="(min-width:1200px)" srcset="/project_group/ice-cream.header.mobile_@1x.png, /project_group/ice-cream.header.mobile_@2x.png"> -->
-        <img width="225px" height="225px"
-          class="ice-cream"
-          src="/src/images/header/ice-cream.header.desc_@1x.png"
-          alt="ice-cream on the plate"
-        />
-      </picture>
-    </div>
-      <div class="description">
-        <p class="description__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et
+    <div class="hero-desc">
+      <p class="hero-desc__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut
+        labore et
       </p>
-      <!-- <button type="button" class="hero-favicon">
-        <svg class="hero-favicon__arrow">
-          <use ></use>
-        </svg>
-      </button> -->
+      <svg class="icon-button" width="40px" height="15px">
+        <use
+          class="arrow arrow--default"
+          href="./images/svg/icons.svg#arrow-default"
+        ></use>
+        <use
+          class="arrow arrow--hover"
+          href="./images/svg/icons.svg#arrow-hover"
+        ></use>
+        <use
+          class="arrow arrow--focus"
+          href="./images/svg/icons.svg#arrow-focus"
+        ></use>
+      </svg>
     </div>
+
+    <div class="hero-thumb">
+      <p class="hero-thumb__numb">16</p>
+      <p class="hero-thumb__text">cafes</p>
+      <p class="hero-thumb__numb">23</p>
+      <p class="hero-thumb__text">food trucks</p>
+    </div>
+    <!-- <div>
+  <picture>
+  <source
+  media="(min-width:1200px)"
+  srcset="
+  ./images/header/rojok.header.desc_@1x.png,
+  ./images/header/rojok.header.desc_@2x.png
+  "
+  />
+  <source
+  media="(min-width:768px)"
+  srcset="
+  ./images/header/rojok.header.tablet_@1x.png,
+  ./images/header/rojok.header.tablet_@2x.png
+  "
+  />
+  <source
+  media="(min-width:200px)"
+  srcset="
+  ./images/header/rojok.header.mobile_@1x.png,
+  ./images/header/rojok.header.mobile_@2x.png
+  "
+  />
+  <img
+  class="ice-cream__main"
+  src="/src/images/header/rojok.header.desc_@1x.png"
+  alt="ice-cream cone"
+  />
+  </picture>
+  <div class="ice-cream__description">
+  <picture>
+  <source
+  media="(min-width:1200px)"
+  srcset="
+  ./images/header/ice-cream.header.desc_@1x.png,
+  ./images/header/ice-cream.header.desc_@2x.png
+  "
+  />
+  <source
+  media="(min-width:768px)"
+  srcset="
+  ./images/header/ice-cream.header.tablet_@1x.png,
+  ./images/header/ice-cream.header.tablet_@1x.png
+  "
+  />
+  <source
+  media="(min-width:1200px)"
+  srcset="
+  /project_group/ice-cream.header.mobile_@1x.png,
+  /project_group/ice-cream.header.mobile_@2x.png
+  "
+  />
+  <img
+  width="225px"
+  height="225px"
+  class="ice-cream"
+  src="/src/images/header/ice-cream.header.desc_@1x.png"
+  alt="ice-cream on the plate"
+  />
+  </picture>
   </div>
-    <div>
-      <picture>
-        <source media="(min-width:1200px)" srcset="./images/header/rojok.header.desc_@1x.png, ./images/header/rojok.header.desc_@2x.png">
-        <source media="(min-width:768px)" srcset="./images/header/rojok.header.tablet_@1x.png, ./images/header/rojok.header.tablet_@2x.png">
-        <source media="(min-width:200px)" srcset="./images/header/rojok.header.mobile_@1x.png, ./images/header/rojok.header.mobile_@2x.png">
-        <img 
-          class="ice-cream__main"
-          src="/src/images/header/rojok.header.desc_@1x.png"
-          alt="ice-cream cone"
-        />
-      </picture>
-    </div>
+  </div> -->
   </div>
 </section>
