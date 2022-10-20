@@ -107,12 +107,11 @@
 
 .socials__item:not(:last-child) {
   margin-right: 28px;
+
   @media screen and (min-width: 768px) {
     margin-right: 30px;
   }
-  @media screen and (min-width: 1200px) {
-    margin-right: 30px;
-  }
+  
 }
 
 .socials__link {

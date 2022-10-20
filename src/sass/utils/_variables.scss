@@ -1,12 +1,20 @@
 :root {
-  --primery-text-color: #FCFCFC;
-  --primery-accent-color: #F8D24E;
+  --primery-text-color: #fcfcfc;
+  --primery-disabled-color: #ababab;
+  --primery-br-disabled-color: #ababab;
+  --primery-accent-color: #f8d24e;
+  --primery-bg-color: #f8d24e;
+  --primery-border-color: #f8d24e;
   --primery-title-color: #131313;
-  --primery-title-font: font-family: 'Seymour One';
+  --primery-hover-color: #0a8817;
+  --primery-br-hover-color: #0a8817;
+  --main-bg-color: #84a178;
+
+  --primery-title-font: 'Seymour One';
   --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // breakpoints:
-$mobile: 320px;
+$mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
