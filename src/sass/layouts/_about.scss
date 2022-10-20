@@ -1,9 +1,11 @@
 .about {
-  background-color: #84a178;
   text-align: center;
 
   &.section {
     padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 60px;
+    }
   }
   &__titles {
     display: flex;
@@ -17,7 +19,6 @@
     align-items: center;
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      // justify-content: space-between;
       align-items: flex-start;
       margin-bottom: 8px;
     }
@@ -89,12 +90,13 @@
       height: 330px;
       border-radius: 165.879px;
       margin-bottom: 0px;
-      margin-right: 100px;
+      margin-right: 32px;
     }
     @media screen and (min-width: 1200px) {
       width: 500px;
       height: 500px;
       border-radius: 250px;
+      margin-right: 100px;
     }
   }
   &__image {
