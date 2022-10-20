@@ -53,18 +53,18 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: decimal-round(calc (22/12));
+  line-height: decimal-round(calc(22 / 12));
   letter-spacing: 0.04em;
   color: #131313;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
-    line-height: decimal-round(calc (26/14));
+    line-height: decimal-round(calc(26 / 14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: decimal-round(calc (30/16));
+    line-height: decimal-round(calc(30 / 16));
   }
 }
 
@@ -97,13 +97,13 @@
 .contacts__representation {
   font-weight: 500;
   font-size: 12px;
-  line-height: decimal-round(calc (22/12));
+  line-height: decimal-round(calc(22 / 12));
   letter-spacing: 0.04em;
   color: #131313;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    line-height: decimal-round(calc (30/16));
+    line-height: decimal-round(calc(30 / 16));
   }
 }
 
@@ -115,7 +115,7 @@
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.04em;
-  line-height: decimal-round(calc (22/12));
+  line-height: decimal-round(calc(22 / 12));
   color: #d6936d;
   margin-bottom: 24px;
 
@@ -125,46 +125,46 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
-    line-height: decimal-round(calc (26/14));
+    line-height: decimal-round(calc(26 / 14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: decimal-round(calc (29/16));
+    line-height: decimal-round(calc(29 / 16));
   }
 }
 
 .contacts-timetable__day {
   font-weight: 500;
   font-size: 12px;
-  line-height: decimal-round(calc (22/12));
+  line-height: decimal-round(calc(22 / 12));
   color: #131313;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
-    line-height: decimal-round(calc (26/14));
+    line-height: decimal-round(calc(26 / 14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: decimal-round(calc (30/16));
+    line-height: decimal-round(calc(30 / 16));
   }
 }
 
 .contacts-timetable__time {
   font-weight: 500;
   font-size: 12px;
-  line-height: decimal-round(calc (22/12));
+  line-height: decimal-round(calc(22 / 12));
   color: #ababab;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
-    line-height: decimal-round(calc (26/14));
+    line-height: decimal-round(calc(26 / 14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: decimal-round(calc (30/16));
+    line-height: decimal-round(calc(30 / 16));
   }
 }
 
@@ -210,17 +210,17 @@
 .contacts-info__tel {
   font-weight: 500;
   font-size: 12px;
-  line-height: decimal-round(calc (18/12));
+  line-height: decimal-round(calc(18 / 12));
   color: #131313;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
-    line-height: decimal-round(calc (26/14));
+    line-height: decimal-round(calc(26 / 14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: decimal-round(calc (29/16));
+    line-height: decimal-round(calc(29 / 16));
   }
 }
 
@@ -228,17 +228,17 @@
   display: block;
   font-weight: 500;
   font-size: 12px;
-  line-height: decimal-round(calc (18/12));
+  line-height: decimal-round(calc(18 / 12));
   color: #131313;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
-    line-height: decimal-round(calc (26/14));
+    line-height: decimal-round(calc(26 / 14));
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    line-height: decimal-round(calc (29/16));
+    line-height: decimal-round(calc(29 / 16));
   }
 }
 
