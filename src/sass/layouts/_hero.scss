@@ -1,12 +1,11 @@
 .hero {
-  position: relative;
   padding-bottom: 239px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 13px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 65px;
   }
 }
@@ -41,7 +40,7 @@
   }
 
   // tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 767px;
     max-height: 67px;
     transform: translate(-25px, 285px);
@@ -54,9 +53,9 @@
     }
   }
 
-  // Desctop
+  // Desktop
   @media screen and (min-width: $desktop) {
-    max-width: 1200px;
+    max-width: $desktop;
     max-height: 384px;
     transform: translate(-16px, 205px);
     background-image: url('../images/hero/points.desc_@1x.png');
@@ -74,11 +73,11 @@
     margin-top: 61px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 40px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 45px;
   }
 }
@@ -98,7 +97,7 @@
     font-size: 34px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 200px;
     font-size: 18px;
     line-height: decimal-round(calc(23 / 18));
@@ -109,7 +108,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 400px;
     font-size: 38px;
     line-height: decimal-round(calc(48 / 38));
@@ -128,11 +127,11 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 28px;
   }
 }
@@ -146,7 +145,7 @@
   font-size: 8px;
   line-height: decimal-round(calc(10 / 8));
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: decimal-round(calc(18 / 14));
     width: 134px;
@@ -169,7 +168,7 @@
   text-decoration-line: underline;
 
   color: var(--primery-accent-color);
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 12px;
     width: 154px;
     height: 40px;
@@ -191,7 +190,7 @@
     margin-top: 28px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 42px;
     height: 225px;
     width: 225px;
@@ -232,7 +231,7 @@
 .hero-desc {
   margin-top: 214px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 368px;
     transform: translateX(-155);
   }
@@ -250,7 +249,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 200px;
     height: 80px;
     font-size: 14px;
@@ -321,7 +320,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 53px;
   }
 }
@@ -334,7 +333,7 @@
   text-transform: uppercase;
   color: var(--primery-title-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 46px;
     line-height: decimal-round(calc(56 / 46));
   }
@@ -343,7 +342,7 @@
 .hero-thumb__numb:nth-child(3) {
   margin-top: 20px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 16px;
   }
 }
@@ -351,11 +350,9 @@
 .hero-thumb__text {
   font-size: 8px;
   line-height: decimal-round(calc(10 / 8));
-
   margin-top: 4px;
-  // color: var(--primery-text-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: decimal-round(calc(17 / 14));
   }
@@ -368,8 +365,7 @@
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
-
+  filter: drop-shadow(0px 0px 40px white);
   // Mobile
   @media screen and (max-width: 767px) {
     width: 170px;
