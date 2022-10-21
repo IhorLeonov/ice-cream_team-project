@@ -139,19 +139,52 @@
 .hero-prod-btn {
   width: 62px;
   height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 
-  margin-right: 8px;
+  width: 196px;
+  height: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   font-weight: 600;
-  font-size: 8px;
-  line-height: decimal-round(calc(10 / 8));
+  font-size: 14px;
+  line-height: calc(18 / 14);
 
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: decimal-round(calc(18 / 14));
-    width: 134px;
-    height: 42px;
-    margin-right: 12px;
+  background-color: inherit;
+  border: 2px solid var(--primery-border-color);
+  border-radius: 10px;
+
+  &:hover {
+    border: 2px solid var(--primery-br-hover-color);
   }
+
+  &:focus {
+    border: 0;
+    fill: var(--primery-text-color);
+    color: var(--primery-text-color);
+    outline: 2px solid var(--primery-br-hover-color);
+  }
+
+  &:disabled {
+    border: 0;
+    outline: 2px solid var(--primery-br-disabled-color);
+  }
+
+  // margin-right: 8px;
+  // font-weight: 600;
+  // font-size: 8px;
+  // line-height: decimal-round(calc(10 / 8));
+
+  // @media screen and (min-width: $desktop) {
+  //   font-size: 14px;
+  //   line-height: decimal-round(calc(18 / 14));
+  //   width: 134px;
+  //   height: 42px;
+  //   margin-right: 12px;
+  // }
 }
 
 .made-btn {
