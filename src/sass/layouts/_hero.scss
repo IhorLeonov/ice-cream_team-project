@@ -29,7 +29,7 @@
   @media screen and (max-width: 767px) {
     height: 50px;
     width: 328px;
-    transform: translate(-5px, 418px);
+    transform: translate(-5px, 400px);
     background-image: url('../images/hero/points.mobile_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -89,6 +89,10 @@
   @media screen and (max-width: 767px) {
     height: 97px;
   }
+
+  animation: backInRight;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 
   font-family: var(--primery-title-font);
   font-weight: 400;
@@ -286,7 +290,7 @@
 
   @media screen and (min-width: $desktop) {
     margin-top: 368px;
-    transform: translateX(-129);
+    transform: translateX(-110);
   }
 }
 
@@ -421,7 +425,9 @@
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
+
   filter: drop-shadow(0px 0px 40px white);
+
   // Mobile
   @media screen and (max-width: 767px) {
     width: 170px;
@@ -436,6 +442,7 @@
       background-image: url('../images/hero/rojok-mob_@2x.png');
     }
   }
+
   // tablet
   @media screen and (min-width: $tablet) {
     max-width: 270px;
