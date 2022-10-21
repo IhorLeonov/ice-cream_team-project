@@ -88,11 +88,11 @@
   }
   @media screen and (max-width: 767px) {
     height: 97px;
-  }
 
-  animation: backInRight;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
+    animation: backInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
 
   font-family: var(--primery-title-font);
   font-weight: 400;
