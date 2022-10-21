@@ -12,7 +12,7 @@
 
 .hero-container {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .hero-container::before {
@@ -83,7 +83,13 @@
 }
 
 .hero-title {
-  width: 280px;
+  @media screen and (max-width: 320px) {
+    width: 280px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 97px;
+  }
+
   font-family: var(--primery-title-font);
   font-weight: 400;
   font-size: 26px;
@@ -98,7 +104,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: 200px;
+    width: 181px;
     font-size: 18px;
     line-height: decimal-round(calc(23 / 18));
 
@@ -109,7 +115,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: 400px;
+    width: 367px;
     font-size: 38px;
     line-height: decimal-round(calc(48 / 38));
 
@@ -155,6 +161,7 @@
   border-radius: 10px;
 
   color: var(--primery-title-color);
+  transition: color 250ms var(--main-animation);
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: decimal-round(calc(18 / 14));
@@ -195,9 +202,10 @@
   font-weight: 600;
   font-size: 8px;
   line-height: decimal-round(calc(10 / 8));
-  text-decoration-line: underline;
 
   color: var(--primery-accent-color);
+
+  transition: color 250ms var(--main-animation);
   @media screen and (min-width: $desktop) {
     width: 154px;
     height: 40px;
@@ -219,6 +227,7 @@
 }
 
 .hero-pic-box {
+  position: relative;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -246,6 +255,9 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    animation: tada;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
     // Tablet
     @media screen and (min-width: $tablet) {
       background-image: url('../images/hero/plate-tablet_@1x.png');
@@ -274,7 +286,7 @@
 
   @media screen and (min-width: $desktop) {
     margin-top: 368px;
-    transform: translateX(-155);
+    transform: translateX(-129);
   }
 }
 
@@ -301,9 +313,12 @@
 
 .hero-btn-arrow {
   fill: var(--primery-text-color);
+  transition: fill 250ms var(--main-animation);
+
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   padding: 0;
 
   max-height: 30px;
@@ -412,7 +427,7 @@
     width: 170px;
     height: 219px;
     z-index: 0;
-    transform: translate(50, 20px);
+    transform: translate(85, 20px);
     background-image: url('../images/hero/rojok-mob_@1x.png');
 
     @media (min-device-pixel-ratio: 2),
