@@ -1551,6 +1551,7 @@ img {
 .how-its-made_video {
   margin-bottom: 20px;
 }
+
 @media screen and (min-width: 481px) {
   .how-its-made_video {
     width: 448px;
@@ -1565,7 +1566,6 @@ img {
   line-height: 1.4285714286;
   color: #131313;
 }
-
 .location_modal {
   height: auto;
 }

@@ -1,351 +1,383 @@
-    <!-- /**
+<!-- /**
       |============================
       | Buy Now Modal Window
       |============================
     */ -->
 
-    <div class="buy-now_modal modal js-modal" data-modal="buy-now">
-      <button type="button" class="modal-close js-modal-close">
-        <svg class="icon-close-modal" width="11" height="11">
-          <use href="./images/svg/icons.svg#close-icon"></use>
-        </svg>
-      </button>
-      <h3 class="buy-now_title modal_title">Buy now</h3>
+<div class="buy-now_modal modal js-modal" data-modal="buy-now">
+  <button type="button" class="modal-close js-modal-close">
+    <svg class="icon-close-modal" width="11" height="11">
+      <use href="./images/svg/icons.svg#close-icon"></use>
+    </svg>
+  </button>
+  <h3 class="buy-now_title modal_title">Buy now</h3>
 
-      <div>
-        <ul class="buy-now_checkbox-container">
-          <li class="buy-now_item">
-            <input
-              id="ice-cream"
-              class="ice-cream-checkbox checkbox"
-              type="checkbox"
-              name="ice-cream"
-              value="ice-cream"/>
-            <label for="ice-cream" class="buy-now_checkbox-label ice-cream-label">Icecream </label>
-
-            <div class="image_underlay icecream_underlay">
-              <img
-                srcset="
-                  ./images/modal/buy-now-modal/image-1/buy-now-1@1x.png,
-                  ./images/modal/buy-now-modal/image-1/buy-now-1@2x.png 2x
-                "
-                src="./images/modal/buy-now-modal/image-1/buy-now-1@1x.png"
-                alt="Ice Cream"
-                class="buy-now_modal-image"/>
-            </div>
-          </li>
-
-          <li class="buy-now_item">
-            <input
-              id="ice-coffee"
-              class="ice-coffee-checkbox checkbox"
-              type="checkbox"
-              name="ice-cream"
-              value="ice-coffee"/>
-            <label for="ice-coffee" class="buy-now_checkbox-label ice-coffee-label"
-              >Ice Coffee</label>
-            <div class="image_underlay ice-coffee_underlay">
-              <img
-                srcset="
-                  ./images/modal/buy-now-modal/image-2/buy-now-2@1x.png,
-                  ./images/modal/buy-now-modal/image-2/buy-now-2@2x.png 2x
-                "
-                src="./images/modal/buy-now-modal/image-2/buy-now-2@1x.png"
-                alt="Ice Coffee"
-                class="buy-now_modal-image"/>
-            </div>
-          </li>
-
-          <li class="buy-now_item">
-            <input
-              id="milkshake"
-              class="milkshake-checkbox checkbox"
-              type="checkbox"
-              name="ice-cream"
-              value="milkshake"/>
-            <label for="milkshake" class="buy-now_checkbox-label milkshake-label">Milkshake</label>
-
-            <div class="image_underlay milkshake_underlay">
-              <img
-                srcset="
-                  ./images/modal/buy-now-modal/image-3/buy-now-3@1x.png,
-                  ./images/modal/buy-now-modal/image-3/buy-now-3@2x.png 2x
-                "
-                src="./images/modal/buy-now-modal/image-3/buy-now-3@1x.png"
-                alt="Milkshake"
-                class="buy-now_modal-image"/>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <form name="buy-now" class="form buy-now_form">
-        <label class="form_label">
-          <input
-            class="input"
-            type="text"
-            name="name"
-            autocomplete="on"
-            placeholder="Name"
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-            title="Username must be two words separated by space"/>
+  <div>
+    <ul class="buy-now_checkbox-container">
+      <li class="buy-now_item">
+        <input
+          id="ice-cream"
+          class="ice-cream-checkbox checkbox"
+          type="checkbox"
+          name="ice-cream"
+          value="ice-cream"
+        />
+        <label for="ice-cream" class="buy-now_checkbox-label ice-cream-label"
+          >Icecream
         </label>
 
-        <label class="form_label">
-          <input
-            class="input"
-            type="tel"
-            name="tel"
-            autocomplete="on"
-            placeholder="Phone"
-            pattern="^([+]\d{2})?-\d{3}-\d{7}$"
-            title="Please enter your pnone number in +11-111-1111111 format"/>
-        </label>
+        <div class="image_underlay icecream_underlay">
+          <img
+            srcset="
+              ./images/modal/buy-now-modal/image-1/buy-now-1@1x.png,
+              ./images/modal/buy-now-modal/image-1/buy-now-1@2x.png 2x
+            "
+            src="./images/modal/buy-now-modal/image-1/buy-now-1@1x.png"
+            alt="Ice Cream"
+            class="buy-now_modal-image"
+          />
+        </div>
+      </li>
 
-        <label class="form_label">
-          <textarea
-            class="input textarea"
-            name="comment"
-            id="buy-now_comment"
-            rows="3"
-            placeholder="Comment"
-            minlength="10"
-            maxlength="200"
-            title="The comment should be at least 10 and no more than 200 characters"></textarea>
-        </label>
-        <button class="modal-submit_button" type="submit">Submit</button>
-      </form>
-    </div>
+      <li class="buy-now_item">
+        <input
+          id="ice-coffee"
+          class="ice-coffee-checkbox checkbox"
+          type="checkbox"
+          name="ice-cream"
+          value="ice-coffee"
+        />
+        <label for="ice-coffee" class="buy-now_checkbox-label ice-coffee-label"
+          >Ice Coffee</label
+        >
+        <div class="image_underlay ice-coffee_underlay">
+          <img
+            srcset="
+              ./images/modal/buy-now-modal/image-2/buy-now-2@1x.png,
+              ./images/modal/buy-now-modal/image-2/buy-now-2@2x.png 2x
+            "
+            src="./images/modal/buy-now-modal/image-2/buy-now-2@1x.png"
+            alt="Ice Coffee"
+            class="buy-now_modal-image"
+          />
+        </div>
+      </li>
 
-    <!-- /**
+      <li class="buy-now_item">
+        <input
+          id="milkshake"
+          class="milkshake-checkbox checkbox"
+          type="checkbox"
+          name="ice-cream"
+          value="milkshake"
+        />
+        <label for="milkshake" class="buy-now_checkbox-label milkshake-label"
+          >Milkshake</label
+        >
+
+        <div class="image_underlay milkshake_underlay">
+          <img
+            srcset="
+              ./images/modal/buy-now-modal/image-3/buy-now-3@1x.png,
+              ./images/modal/buy-now-modal/image-3/buy-now-3@2x.png 2x
+            "
+            src="./images/modal/buy-now-modal/image-3/buy-now-3@1x.png"
+            alt="Milkshake"
+            class="buy-now_modal-image"
+          />
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <form name="buy-now" class="form buy-now_form">
+    <label class="form_label">
+      <input
+        class="input"
+        type="text"
+        name="name"
+        autocomplete="on"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space"
+      />
+    </label>
+
+    <label class="form_label">
+      <input
+        class="input"
+        type="tel"
+        name="tel"
+        autocomplete="on"
+        placeholder="Phone"
+        pattern="^([+]\d{2})?-\d{3}-\d{7}$"
+        title="Please enter your pnone number in +11-111-1111111 format"
+      />
+    </label>
+
+    <label class="form_label">
+      <textarea
+        class="input textarea"
+        name="comment"
+        id="buy-now_comment"
+        rows="3"
+        placeholder="Comment"
+        minlength="10"
+        maxlength="200"
+        title="The comment should be at least 10 and no more than 200 characters"
+      ></textarea>
+    </label>
+    <button class="modal-submit_button" type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- /**
   |============================
   | Buy Now Modal Window (with Ingredients)
   |============================
 */ -->
 
-    <div class="buy-now-ingredients_modal modal js-modal" data-modal="buy-now_ingredients">
-      <button type="button" class="modal-close js-modal-close">
-        <svg class="icon-close-modal" width="11" height="11">
-          <use href="./images/svg/icons.svg#close-icon"></use>
-        </svg>
-      </button>
-      <h3 class="modal_title buy-now-ingredients_title">Chocolate icecream</h3>
-      <div class="buy-now-ingredients_image-underlay">
-        <img
-          srcset="
-            ./images/modal/ingredients-modal/ingredients-image@1x.png,
-            ./images/modal/ingredients-modal/ingredients-image@2x.png 2x
-          "
-          src="./images/modal/ingredients-modal/ingredients-image@1x.png"
-          alt="Chocolate Ice Cream"
-          class="ingedients_modal-image"/>
-      </div>
-      <ul class="buy-now-ingredients_list">
-        <li class="buy-now-ingredients_item">
-          <div class="nutrients_underlay">320</div>
-          <p class="nutrients">ckal</p>
-        </li>
-        <li class="buy-now-ingredients_item">
-          <div class="nutrients_underlay">4g</div>
-          <p class="nutrients">Proteins</p>
-        </li>
-        <li class="buy-now-ingredients_item">
-          <div class="nutrients_underlay">8,2g</div>
-          <p class="nutrients">Fats</p>
-        </li>
-        <li class="buy-now-ingredients_item">
-          <div class="nutrients_underlay">40,4g</div>
-          <p class="nutrients">Carbs</p>
-        </li>
-      </ul>
-      <p class="ingredients_small-title">Ingredients</p>
+<div
+  class="buy-now-ingredients_modal modal js-modal"
+  data-modal="buy-now_ingredients"
+>
+  <button type="button" class="modal-close js-modal-close">
+    <svg class="icon-close-modal" width="11" height="11">
+      <use href="./images/svg/icons.svg#close-icon"></use>
+    </svg>
+  </button>
+  <h3 class="modal_title buy-now-ingredients_title">Chocolate icecream</h3>
+  <div class="buy-now-ingredients_image-underlay">
+    <img
+      srcset="
+        ./images/modal/ingredients-modal/ingredients-image@1x.png,
+        ./images/modal/ingredients-modal/ingredients-image@2x.png 2x
+      "
+      src="./images/modal/ingredients-modal/ingredients-image@1x.png"
+      alt="Chocolate Ice Cream"
+      class="ingedients_modal-image"
+    />
+  </div>
+  <ul class="buy-now-ingredients_list">
+    <li class="buy-now-ingredients_item">
+      <div class="nutrients_underlay">320</div>
+      <p class="nutrients">ckal</p>
+    </li>
+    <li class="buy-now-ingredients_item">
+      <div class="nutrients_underlay">4g</div>
+      <p class="nutrients">Proteins</p>
+    </li>
+    <li class="buy-now-ingredients_item">
+      <div class="nutrients_underlay">8,2g</div>
+      <p class="nutrients">Fats</p>
+    </li>
+    <li class="buy-now-ingredients_item">
+      <div class="nutrients_underlay">40,4g</div>
+      <p class="nutrients">Carbs</p>
+    </li>
+  </ul>
+  <p class="ingredients_small-title">Ingredients</p>
 
-      <ul class="ingredients_list">
-        <li class="ingredients_item"><span>Milk</span><span>100ml</span></li>
-        <li class="ingredients_item"><span>Belgian chocolate</span><span>20g</span></li>
-        <li class="ingredients_item"><span>Cream</span><span>150 ml</span></li>
-        <li class="ingredients_item"><span>Cocoa powder</span><span>30g</span></li>
-        <li class="ingredients_item"><span>Sugar</span><span>40g</span></li>
-        <li class="ingredients_item"><span>Vanilla sugar</span><span>10g</span></li>
-      </ul>
+  <ul class="ingredients_list">
+    <li class="ingredients_item"><span>Milk</span><span>100ml</span></li>
+    <li class="ingredients_item">
+      <span>Belgian chocolate</span><span>20g</span>
+    </li>
+    <li class="ingredients_item"><span>Cream</span><span>150 ml</span></li>
+    <li class="ingredients_item"><span>Cocoa powder</span><span>30g</span></li>
+    <li class="ingredients_item"><span>Sugar</span><span>40g</span></li>
+    <li class="ingredients_item"><span>Vanilla sugar</span><span>10g</span></li>
+  </ul>
 
-      <form name="buy-now" class="form buy-now_form">
-        <label class="form_label">
-          <input
-            class="input"
-            type="text"
-            name="name"
-            autocomplete="on"
-            placeholder="Name"
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-            title="Username must be two words separated by space"/>
-        </label>
+  <form name="buy-now" class="form buy-now_form">
+    <label class="form_label">
+      <input
+        class="input"
+        type="text"
+        name="name"
+        autocomplete="on"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space"
+      />
+    </label>
 
-        <label class="form_label">
-          <input
-            class="input"
-            type="tel"
-            name="tel"
-            autocomplete="on"
-            placeholder="Phone"
-            pattern="^([+]\d{2})?-\d{3}-\d{7}$"
-            title="Please enter your pnone number in +11-111-1111111 format"/>
-        </label>
+    <label class="form_label">
+      <input
+        class="input"
+        type="tel"
+        name="tel"
+        autocomplete="on"
+        placeholder="Phone"
+        pattern="^([+]\d{2})?-\d{3}-\d{7}$"
+        title="Please enter your pnone number in +11-111-1111111 format"
+      />
+    </label>
 
-        <label class="form_label">
-          <textarea
-            class="input textarea"
-            name="comment"
-            id="buy-now-ingredients_comment"
-            rows="3"
-            placeholder="Comment"
-            minlength="10"
-            maxlength="200"
-            title="The comment should be at least 10 and no more than 200 characters"></textarea>
-        </label>
-        <button class="modal-submit_button" type="submit">Submit</button>
-      </form>
-    </div>
+    <label class="form_label">
+      <textarea
+        class="input textarea"
+        name="comment"
+        id="buy-now-ingredients_comment"
+        rows="3"
+        placeholder="Comment"
+        minlength="10"
+        maxlength="200"
+        title="The comment should be at least 10 and no more than 200 characters"
+      ></textarea>
+    </label>
+    <button class="modal-submit_button" type="submit">Submit</button>
+  </form>
+</div>
 
-    <!-- /**
+<!-- /**
   |============================
   | How It`s Made Modal Window
   |============================
 */ -->
 
-    <div class="how-its-made_modal modal js-modal" data-modal="how-made">
-      <button type="button" class="modal-close js-modal-close">
-        <svg class="icon-close-modal" width="11" height="11">
-          <use href="./images/svg/icons.svg#close-icon"></use>
-        </svg>
-      </button>
-      <h3 class="modal_title how-its-made_title">How it’s made?</h3>
-      <iframe
-        class="how-its-made_video"
-        width="224"
-        height="200"
-        src="https://www.youtube.com/embed/zagD0LQdsDE"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <div class="how-its-made_text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et
-      </div>
-    </div>
+<div class="how-its-made_modal modal js-modal" data-modal="how-made">
+  <button type="button" class="modal-close js-modal-close">
+    <svg class="icon-close-modal" width="11" height="11">
+      <use href="./images/svg/icons.svg#close-icon"></use>
+    </svg>
+  </button>
+  <h3 class="modal_title how-its-made_title">How it’s made?</h3>
+  <iframe
+    class="how-its-made_video"
+    width="224"
+    height="200"
+    src="https://www.youtube.com/embed/zagD0LQdsDE"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <div class="how-its-made_text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+  </div>
+</div>
 
-    <!-- /**
+<!-- /**
   |============================
   | Locations Modal Window
   |============================
 */ -->
 
-    <div class="location_modal modal js-modal" data-modal="locations">
-      <button type="button" class="modal-close js-modal-close">
-        <svg class="icon-close-modal" width="11" height="11">
-          <use href="./images/svg/icons.svg#close-icon"></use>
-        </svg>
-      </button>
-      <h3 class="modal_title location-title">Our Locations</h3>
-      <picture class="location-image">
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/modal/location-modal/map-mobile_224.jpg 1x,
-            ./images/modal/location-modal/map-mobile_448.jpg 2x
-          "/>
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/modal/location-modal/map-desktop_448.jpg 1x,
-            ./images/modal/location-modal/map-desktop_896.jpg 2x
-          "/>
-        <img src="./images/modal/location-modal/map-desktop_896.jpg" alt="Map" />
-      </picture>
-      <a
-        class="open-map_link"
-        href="https://goo.gl/maps/gjFAeG6t4nSM62w7A"
-        target="_blank"
-        rel="norefferer noopener"
-        >Open Map</a>
-    </div>
+<div class="location_modal modal js-modal" data-modal="locations">
+  <button type="button" class="modal-close js-modal-close">
+    <svg class="icon-close-modal" width="11" height="11">
+      <use href="./images/svg/icons.svg#close-icon"></use>
+    </svg>
+  </button>
+  <h3 class="modal_title location-title">Our Locations</h3>
+  <picture class="location-image">
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        ./images/modal/location-modal/map-mobile_224.jpg 1x,
+        ./images/modal/location-modal/map-mobile_448.jpg 2x
+      "
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/modal/location-modal/map-desktop_448.jpg 1x,
+        ./images/modal/location-modal/map-desktop_896.jpg 2x
+      "
+    />
+    <img src="./images/modal/location-modal/map-desktop_896.jpg" alt="Map" />
+  </picture>
+  <a
+    class="open-map_link"
+    href="https://goo.gl/maps/gjFAeG6t4nSM62w7A"
+    target="_blank"
+    rel="norefferer noopener"
+    >Open Map</a
+  >
+</div>
 
-    <!-- /**
+<!-- /**
   |============================
   | Franchise Modal Window
   |============================
 */ -->
 
-    <div class="franchise_modal modal js-modal" data-modal="franchise">
-      <button type="button" class="modal-close js-modal-close">
-        <svg class="icon-close-modal" width="11" height="11">
-          <use href="./images/svg/icons.svg#close-icon"></use>
-        </svg>
-      </button>
-      <h3 class="modal_title franchise_title">
-        Thank you for your interest in owning an Ice Cream shop
-      </h3>
-      <div class="franchise_text">
-        Due to the overwhelming volume of franchise requests we are not accepting new franchisee
-        applications at this time. Once the application process resumes, we will contact you for
-        further information. Please fill out the contact information below and we will reach out for
-        additional information. We appreciate your patience.
-      </div>
+<div class="franchise_modal modal js-modal" data-modal="franchise">
+  <button type="button" class="modal-close js-modal-close">
+    <svg class="icon-close-modal" width="11" height="11">
+      <use href="./images/svg/icons.svg#close-icon"></use>
+    </svg>
+  </button>
+  <h3 class="modal_title franchise_title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h3>
+  <div class="franchise_text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </div>
 
-      <form name="buy-now" class="form buy-now_form">
-        <label class="form_label">
-          <input
-            class="input"
-            type="text"
-            name="name"
-            autocomplete="on"
-            placeholder="Name"
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-            title="Username must be two words separated by space"/>
-        </label>
+  <form name="buy-now" class="form buy-now_form">
+    <label class="form_label">
+      <input
+        class="input"
+        type="text"
+        name="name"
+        autocomplete="on"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space"
+      />
+    </label>
 
-        <label class="form_label">
-          <input
-            class="input"
-            type="tel"
-            name="tel"
-            autocomplete="on"
-            placeholder="Phone"
-            pattern="^([+]\d{2})?-\d{3}-\d{7}$"
-            title="Please enter your pnone number in +11-111-1111111 format"/>
-        </label>
+    <label class="form_label">
+      <input
+        class="input"
+        type="tel"
+        name="tel"
+        autocomplete="on"
+        placeholder="Phone"
+        pattern="^([+]\d{2})?-\d{3}-\d{7}$"
+        title="Please enter your pnone number in +11-111-1111111 format"
+      />
+    </label>
 
-        <label>
-          <input
-            class="input"
-            type="email"
-            name="email"
-            autocomplete="on"
-            placeholder="E-mail"
-            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
-            title="Enter your email in the your-email@mail.com format"/>
-        </label>
+    <label>
+      <input
+        class="input"
+        type="email"
+        name="email"
+        autocomplete="on"
+        placeholder="E-mail"
+        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+        title="Enter your email in the your-email@mail.com format"
+      />
+    </label>
 
-        <label class="form_label">
-          <textarea
-            class="input textarea"
-            name="comment"
-            id="franchise_comment"
-            rows="3"
-            placeholder="Comment"
-            minlength="10"
-            maxlength="200"
-            title="The comment should be at least 10 and no more than 200 characters"></textarea>
-        </label>
-        <button class="modal-submit_button" type="submit">Submit</button>
-      </form>
-    </div>
+    <label class="form_label">
+      <textarea
+        class="input textarea"
+        name="comment"
+        id="franchise_comment"
+        rows="3"
+        placeholder="Comment"
+        minlength="10"
+        maxlength="200"
+        title="The comment should be at least 10 and no more than 200 characters"
+      ></textarea>
+    </label>
+    <button class="modal-submit_button" type="submit">Submit</button>
+  </form>
+</div>
 
-    <!-- /**
+<!-- /**
   |============================
   | Overlay
   |============================
 */ -->
 
-    <div class="overlay js-overlay-modal"></div>
+<div class="overlay js-overlay-modal"></div>
