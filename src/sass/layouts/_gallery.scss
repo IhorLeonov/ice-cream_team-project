@@ -137,6 +137,8 @@
 }
 
 .reviews__description {
+  min-width: 280px;
+  min-height: 250px;
   margin-bottom: 30px;
   padding: 34px 39px;
 
@@ -150,6 +152,8 @@
   border-radius: 10px;
 
   @media screen and (min-width: $tablet) {
+    min-width: 705px;
+    min-height: 138px;
     padding: 28px 80px;
 
     font-size: 14px;
@@ -157,6 +161,8 @@
   }
 
   @media screen and (min-width: $desktop) {
+    min-width: 968px;
+    min-height: 138px;
     padding: 39px 74px;
 
     font-size: 16px;
