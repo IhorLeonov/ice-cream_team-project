@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
          /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
-         var modalId = this.getAttribute('data-modal'),
+         var modalId = this.getAttribute('data-modal');
+         var mobileMenu = document.querySelector('.js-menu-container'),
              modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 
 
@@ -33,6 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
          modalElem.classList.add('active');
          overlay.classList.add('active');
          body.classList.add('active');
+
+
+         if (mobileMenu.classList[2] !== 'is-open') {
+        return;
+      }
+      mobileMenu.classList.toggle('is-open');
       }); // end click
 
    }); // end foreach
